@@ -1,0 +1,17 @@
+# data — lives in volume, not in image
+practice/data/question_bank/
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# env and secrets
+.env
+*.env
+
+# dev tools
+.git/
+.gitignore
+*.md

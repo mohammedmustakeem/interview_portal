@@ -1,0 +1,287 @@
+[
+  {
+    "question": "In a quality control check, the weights were [10, 12, 14, 16]. Find the standard deviation.",
+    "options": {
+      "A": "2.24 number",
+      "B": "0.74 number",
+      "C": "2.74 number",
+      "D": "1.74 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_std_dev",
+    "category": "statistics",
+    "difficulty": "medium",
+    "concept_id": "STAT_STD_DEV",
+    "id": "a4d564a3-892f-4eba-b9c3-99567fcdd219"
+  },
+  {
+    "question": "Find the mode of the data set [5, 7, 7, 7, 9, 9].",
+    "options": {
+      "A": "6.0 number",
+      "B": "5.5 number",
+      "C": "7.0 number",
+      "D": "6.5 number"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using stat_mode",
+    "category": "statistics",
+    "difficulty": "medium",
+    "concept_id": "STAT_MODE",
+    "id": "44256910-dae5-4ca5-9c3d-b2958b3a02bb"
+  },
+  {
+    "question": "What is the weighted mean of the observations [15, 25, 35] if their frequencies are [1, 2, 3]?",
+    "options": {
+      "A": "26.33 number",
+      "B": "27.83 number",
+      "C": "28.33 number",
+      "D": "29.83 number"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using stat_weighted_mean",
+    "category": "statistics",
+    "difficulty": "medium",
+    "concept_id": "STAT_WEIGHTED_MEAN",
+    "id": "d28fa963-e0e0-44cb-87e7-c881de7f075d"
+  },
+  {
+    "question": "Determine the variance (σ²) of the following numbers: [5, 10, 15, 20].",
+    "options": {
+      "A": "31.25 number",
+      "B": "32.25 number",
+      "C": "33.25 number",
+      "D": "32.75 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_variance",
+    "category": "statistics",
+    "difficulty": "medium",
+    "concept_id": "STAT_VARIANCE",
+    "id": "9f0af4e2-deef-4c6d-bae5-980bdae6b997"
+  },
+  {
+    "question": "What is the probability of success if 10 outcomes are favorable out of 25?",
+    "options": {
+      "A": "1.4 fraction",
+      "B": "2.4 fraction",
+      "C": "0.9 fraction",
+      "D": "0.4 fraction"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using stat_probability",
+    "category": "statistics",
+    "difficulty": "medium",
+    "concept_id": "STAT_PROBABILITY_BASIC",
+    "id": "7e9ef0eb-f584-4cc1-abd3-4e5b97949bde"
+  },
+  {
+    "question": "Calculate the variance for the given observations: [12, 18, 24, 30].",
+    "options": {
+      "A": "45.5 number",
+      "B": "45.0 number",
+      "C": "44.5 number",
+      "D": "43.5 number"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using stat_variance",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_VARIANCE",
+    "id": "778b547d-74ad-4288-9b59-089e138be6e4"
+  },
+  {
+    "question": "In a survey, the results recorded were [8.5, 16.2, 24.3, 32.1]. Determine the average value.",
+    "options": {
+      "A": "18.77 number",
+      "B": "19.27 number",
+      "C": "19.77 number",
+      "D": "20.27 number"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using stat_mean",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_MEAN",
+    "id": "4277ddaa-b62e-41ca-88a1-d8cc9c049779"
+  },
+  {
+    "question": "What is the median of the following numbers: [145, 167, 189, 210]?",
+    "options": {
+      "A": "176.5 number",
+      "B": "178.0 number",
+      "C": "177.0 number",
+      "D": "178.5 number"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using stat_median",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_MEDIAN",
+    "id": "3ee3553f-8699-490d-be7d-ea667f1f9570"
+  },
+  {
+    "question": "Which value occurs most frequently in the following data: [20, 25, 25, 30, 30, 30]?",
+    "options": {
+      "A": "30.0 number",
+      "B": "28.0 number",
+      "C": "31.5 number",
+      "D": "32.0 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_mode",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_MODE",
+    "id": "fcccffbb-97c5-437b-bf6d-1cbb757439de"
+  },
+  {
+    "question": "Determine the effective average of [92, 85, 88, 95] adjusted by the significance factors [10, 20, 30, 40].",
+    "options": {
+      "A": "90.6 number",
+      "B": "91.1 number",
+      "C": "89.6 number",
+      "D": "92.1 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_weighted_mean",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_WEIGHTED_MEAN",
+    "id": "891b6353-945c-46d4-b1d5-c4e47ee04f36"
+  },
+  {
+    "question": "Find the probability of a favorable outcome when there are 17 favorable cases out of 100 total cases.",
+    "options": {
+      "A": "1.17 fraction",
+      "B": "2.17 fraction",
+      "C": "0.67 fraction",
+      "D": "0.17 fraction"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using stat_probability",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_PROBABILITY_BASIC",
+    "id": "a9c9051b-1d1c-40ce-b124-ec674c3b69b5"
+  },
+  {
+    "question": "Determine the standard deviation (σ) of the following numbers: [8, 16, 24, 32].",
+    "options": {
+      "A": "8.94 number",
+      "B": "6.94 number",
+      "C": "8.44 number",
+      "D": "7.94 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_std_dev",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_STD_DEV",
+    "id": "189a4b2a-4318-443e-82ab-ceca20f194d5"
+  },
+  {
+    "question": "Find the mode of the data set [105, 105, 110, 115].",
+    "options": {
+      "A": "105.0 number",
+      "B": "104.5 number",
+      "C": "105.5 number",
+      "D": "103.5 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_mode",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_MODE",
+    "id": "e793cd0a-8264-4519-aabc-e17e51150d19"
+  },
+  {
+    "question": "Find the standard deviation of the data set [8, 16, 24, 32].",
+    "options": {
+      "A": "7.94 number",
+      "B": "8.44 number",
+      "C": "6.94 number",
+      "D": "8.94 number"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using stat_std_dev",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_STD_DEV",
+    "id": "198a1431-e412-4bcd-a6fc-3ba96b71e13f"
+  },
+  {
+    "question": "Find the median of the data set [12.5, 18.2, 24.6, 30.1, 36.4].",
+    "options": {
+      "A": "24.6 number",
+      "B": "23.1 number",
+      "C": "26.1 number",
+      "D": "22.6 number"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using stat_median",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_MEDIAN",
+    "id": "61aec258-845e-4a98-9506-14bcba4df272"
+  },
+  {
+    "question": "A student's grades are [12.5, 14.2, 18.8] with credit hours [0.2, 0.5, 0.3]. Find the Weighted GPA.",
+    "options": {
+      "A": "13.74 number",
+      "B": "15.24 number",
+      "C": "14.74 number",
+      "D": "14.24 number"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using stat_weighted_mean",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_WEIGHTED_MEAN",
+    "id": "dff9f894-bb81-43e3-8c2a-524c1441e567"
+  },
+  {
+    "question": "Find the probability of a favorable outcome when there are 17 favorable cases out of 200 total cases.",
+    "options": {
+      "A": "1.09 fraction",
+      "B": "2.09 fraction",
+      "C": "0.59 fraction",
+      "D": "0.09 fraction"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using stat_probability",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_PROBABILITY_BASIC",
+    "id": "0e76d8c9-300e-410c-80ba-a232f4d54124"
+  },
+  {
+    "question": "In a scientific experiment, the recorded values were [8, 16, 24, 32]. Find the variance.",
+    "options": {
+      "A": "78.5 number",
+      "B": "80.5 number",
+      "C": "80.0 number",
+      "D": "79.0 number"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using stat_variance",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_VARIANCE",
+    "id": "84f9d0a6-f024-4da4-b494-aec880a8f481"
+  },
+  {
+    "question": "Find the arithmetic mean of the numbers [0.5, 1.2, 0.8, 2.4, 1.1].",
+    "options": {
+      "A": "1.7 number",
+      "B": "0.7 number",
+      "C": "2.2 number",
+      "D": "1.2 number"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using stat_mean",
+    "category": "statistics",
+    "difficulty": "hard",
+    "concept_id": "STAT_MEAN",
+    "id": "c4c9907f-69cd-481c-aa78-83141254e301"
+  }
+]

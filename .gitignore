@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints
+.env
+
+index.html
+script.js
+test.py
+test_int.html
+yolov8s.pt
+yolov8n.pt

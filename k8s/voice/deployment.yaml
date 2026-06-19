@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voice-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: voice-service
+  template:
+    metadata:
+      labels:
+        app: voice-service
+    spec:
+      containers:
+        - name: voice-service
+          image: your-dockerhub/voice-service
+          ports:
+            - containerPort: 8001
+          resources:
+            requests:
+              cpu: "1"
+              memory: "1Gi"
+            limits:
+              cpu: "2"
+              memory: "2Gi"

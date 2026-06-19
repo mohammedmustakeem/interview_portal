@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+video {
+    transform: scaleX(-1);
+}
+</style>
+<video id="video" autoplay playsinline width="500"></video>
+
+<div id="warningBox" style="
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:red;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    display:none;
+    z-index:1000;
+"></div>
+
+
+<script>
+const video = document.getElementById("video");
+const warningBox = document.getElementById("warningBox");
+
+// LOCAL WebSocket
+//<!-- const ws = new WebSocket("ws://127.0.0.1:8000/vision/ws") -->
+//deployed WebSocket
+const ws = new WebSocket("https://vision-qo97.onrender.com/vision/ws")
+
+ws.onopen = () => {
+    console.log("Vision connected");
+};
+
+ws.onmessage = (event) => {
+    const result = JSON.parse(event.data);
+    console.log("Detection:", result);
+
+    if (result.warnings && result.warnings.length > 0) {
+        warningBox.innerText = result.warnings.join(", ");
+        warningBox.style.display = "block";
+    } else {
+        warningBox.style.display = "none";
+    }
+};
+
+navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+.then(stream => {
+    video.srcObject = stream;
+
+    video.onloadedmetadata = () => {
+        video.play();
+        startSendingFrames();
+    };
+});
+
+function startSendingFrames() {
+
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    setInterval(() => { 
+
+        if (ws.readyState !== WebSocket.OPEN) return;
+        if (!video.videoWidth) return;
+
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+
+        context.drawImage(video, 0, 0);
+
+        const imageData = canvas.toDataURL("image/jpeg");
+
+        ws.send(JSON.stringify({
+            frame: imageData,
+            phase: "USER_SPEAKING"
+        }));
+
+    }, 150); // 2 sec interval
+
+}
+</script>
+
+</body>
+</html>

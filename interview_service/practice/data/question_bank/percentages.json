@@ -1,0 +1,662 @@
+[
+  {
+    "question": "A laptop is advertised at a sale price of 425 after a discount of 40%. What was the original listed price of the laptop?",
+    "options": {
+      "A": "566.66",
+      "B": "850.0",
+      "C": "425.0",
+      "D": "708.33"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "medium",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "52b9fe9e-2f09-4ddf-89aa-7a761a85cee0"
+  },
+  {
+    "question": "A farmer purchased a batch of seeds for 175 and later sold the harvested crops for 250. Calculate the profit percentage earned from this transaction.",
+    "options": {
+      "A": "36.0",
+      "B": "18.0",
+      "C": "30.0",
+      "D": "24.0"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "medium",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "ab2f5169-ae4f-409d-87ae-7c9905c474e2"
+  },
+  {
+    "question": "A shop raises the price of a product by 15% during a sale, and later increases it again by 20% when the sale ends. What is the overall percentage increase in the product's price?",
+    "options": {
+      "A": "45.6",
+      "B": "22.8",
+      "C": "38.0",
+      "D": "53.2"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "medium",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "6a63e62b-5538-40d2-a78d-43fbc7c61f76"
+  },
+  {
+    "question": "A shop raises the price of a product by 30% during a sale event, but later reduces the price by 15% when the sale ends. What is the overall percentage change in the product's price?",
+    "options": {
+      "A": "8.4",
+      "B": "10.5",
+      "C": "6.3",
+      "D": "12.6"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "medium",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "b366462b-838c-4856-9399-6ce33d79f49a"
+  },
+  {
+    "question": "A retailer marks up the cost of a product by 37.5% before offering a seasonal discount of 40%. What is the overall percentage change in the final selling price compared to the original cost?",
+    "options": {
+      "A": "-24.5",
+      "B": "-21.0",
+      "C": "-17.5",
+      "D": "-14.0"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "ca6c81e7-9205-4ca2-a252-ef4a7fb8018c"
+  },
+  {
+    "question": "A jewelry manufacturer finds that after refining, the mass of a gold alloy decreases by 18.75%, resulting in a final product weighing 9750 kg. Determine the original mass of the unrefined alloy.",
+    "options": {
+      "A": "7200.0",
+      "B": "14400.0",
+      "C": "9600.0",
+      "D": "12000.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "d97cfa9e-4c1a-4a55-848c-8a9d04c2c1a4"
+  },
+  {
+    "question": "A manufacturer produced goods at a cost of 560 and sold them to a distributor for 1050. Calculate the manufacturer's profit percentage.",
+    "options": {
+      "A": "28.0",
+      "B": "65.34",
+      "C": "56.0",
+      "D": "46.67"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "ca9c9fb2-81c8-432f-a5e9-ad53ec81e43c"
+  },
+  {
+    "question": "A luxury car's original price is marked up by 40% before a subsequent markup of 37.5% is added during a promotional event. What is the overall percentage increase in the car's final price?",
+    "options": {
+      "A": "92.5",
+      "B": "74.0",
+      "C": "129.5",
+      "D": "111.0"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "bdcb04a5-756f-48df-80f7-be67c88c3068"
+  },
+  {
+    "question": "A shop owner wants to raise the price of an item from 80 dollars to 100 dollars. What percentage increase should the owner apply to achieve the new price?",
+    "options": {
+      "A": "16.0",
+      "B": "24.0",
+      "C": "12.0",
+      "D": "20.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "0fcce5c9-93af-4d34-9651-c28ca49516d3"
+  },
+  {
+    "question": "A smartphone's original price is raised by 20% during a sale, and later the store adds an additional 10% price hike. What is the overall percentage increase in the smartphone's price?",
+    "options": {
+      "A": "19.2",
+      "B": "44.8",
+      "C": "25.6",
+      "D": "32.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "96d4f4ae-a2e3-4c8e-8d0f-192faa58f4c2"
+  },
+  {
+    "question": "After a store raises the price of a jacket by 20% during a seasonal sale, it later offers a discount of 10%. What is the overall percentage change in the jacket’s final price compared to its original price?",
+    "options": {
+      "A": "9.6",
+      "B": "8.0",
+      "C": "4.8",
+      "D": "11.2"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "6764bc15-d53b-4600-aaf5-f81edd606c4c"
+  },
+  {
+    "question": "A shop reduces the price of a jacket by 10%, and the new price is now 240. What was the original price of the jacket?",
+    "options": {
+      "A": "320.0",
+      "B": "373.34",
+      "C": "160.0",
+      "D": "266.67"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "0f6b537d-f609-4df1-9226-a18aa95e8317"
+  },
+  {
+    "question": "In a store, a product originally priced at 100 is now being sold for 40. What is the percentage discount offered on the product?",
+    "options": {
+      "A": "36.0",
+      "B": "48.0",
+      "C": "60.0",
+      "D": "72.0"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "866b3c1d-6eb8-45ee-87d4-324a03562969"
+  },
+  {
+    "question": "A smartphone's original price is marked up by 20% during a sale, then discounted by 10% at checkout. What is the overall percentage change in the final price?",
+    "options": {
+      "A": "11.2",
+      "B": "9.6",
+      "C": "8.0",
+      "D": "4.8"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "3db87d93-695e-4e6c-bd68-3de6d00b7dcf"
+  },
+  {
+    "question": "A shop raises the price of a product by 20% during a sale and later increases it again by 20% when the sale ends. What is the overall percentage increase in the product’s price?",
+    "options": {
+      "A": "44.0",
+      "B": "26.4",
+      "C": "35.2",
+      "D": "52.8"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "11a9f5eb-0d34-483f-9612-6cecb380b335"
+  },
+  {
+    "question": "A shop offers a discount of 50% on a jacket, reducing its price to $80. What was the original price of the jacket?",
+    "options": {
+      "A": "224.0",
+      "B": "160.0",
+      "C": "128.0",
+      "D": "96.0"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "248949f2-a8a0-4bf3-8e26-fb6c949bd5c2"
+  },
+  {
+    "question": "An item's price is increased by 10% and then a further increase of 10% is applied. What is the total effective increase?",
+    "options": {
+      "A": "12.6",
+      "B": "25.2",
+      "C": "16.8",
+      "D": "21.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "aef1c99c-32c4-4fba-87b3-5f4d71a41d52"
+  },
+  {
+    "question": "Calculate the percentage increase required to go from 40 to 75.",
+    "options": {
+      "A": "65.34",
+      "B": "28.0",
+      "C": "46.67",
+      "D": "56.0"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "dcca8b15-bc5b-4a4f-aa06-7fb9efc90629"
+  },
+  {
+    "question": "The price of an item is increased by 10% and later reduced by 10%. What is the net percentage effect on the price?",
+    "options": {
+      "A": "-1.4",
+      "B": "-0.8",
+      "C": "-1.0",
+      "D": "-0.6"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "5a5d24c7-e3f3-4cfb-b792-b3a684ede873"
+  },
+  {
+    "question": "After a decrease of 20%, a number becomes 160. Find the original number.",
+    "options": {
+      "A": "200.0",
+      "B": "120.0",
+      "C": "240.0",
+      "D": "160.0"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "17673070-795a-4be5-b8b0-f0870d8fb050"
+  },
+  {
+    "question": "An item's price is increased by 20% and then a further increase of 20% is applied. What is the total effective increase?",
+    "options": {
+      "A": "44.0",
+      "B": "52.8",
+      "C": "35.2",
+      "D": "26.4"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "54499849-a1e1-47b8-99b2-444a5bdaf722"
+  },
+  {
+    "question": "A value increases by 10% and then decreases by 20%. Find the net percentage change.",
+    "options": {
+      "A": "-12.0",
+      "B": "-7.2",
+      "C": "-14.4",
+      "D": "-16.8"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "591e6e75-4c92-42ea-8612-1a291bb12f05"
+  },
+  {
+    "question": "By what percentage is 40 less than 50?",
+    "options": {
+      "A": "24.0",
+      "B": "20.0",
+      "C": "16.0",
+      "D": "12.0"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "e2b661cb-b3e3-4d2d-add8-2092cdb30658"
+  },
+  {
+    "question": "A pair of shoes is sold for 240 after a discount of 50%. What was the marked price?",
+    "options": {
+      "A": "576.0",
+      "B": "288.0",
+      "C": "480.0",
+      "D": "384.0"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "3477f22f-b55e-4b73-b960-b82d41e1c580"
+  },
+  {
+    "question": "A value increases by 20% and then decreases by 10%. Find the net percentage change.",
+    "options": {
+      "A": "11.2",
+      "B": "9.6",
+      "C": "4.8",
+      "D": "8.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "bb6d890f-36b0-472b-afb8-f3ada65fbf33"
+  },
+  {
+    "question": "Calculate the percentage increase required to go from 60 to 100.",
+    "options": {
+      "A": "32.0",
+      "B": "40.0",
+      "C": "24.0",
+      "D": "56.0"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "bf74f381-5d2f-4867-9961-304fa37720b9"
+  },
+  {
+    "question": "A pair of shoes is sold for 80 after a discount of 50%. What was the marked price?",
+    "options": {
+      "A": "160.0",
+      "B": "224.0",
+      "C": "96.0",
+      "D": "128.0"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "e63d0220-3cac-4ba7-a4bf-0659835f1364"
+  },
+  {
+    "question": "A value is increased by 20% and then increased again by 10%. Find the net percentage change.",
+    "options": {
+      "A": "19.2",
+      "B": "32.0",
+      "C": "25.6",
+      "D": "44.8"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "b99dd359-5781-41ff-ba68-0eaa39f4b0c9"
+  },
+  {
+    "question": "Calculate the percentage increase required to go from 80 to 50.",
+    "options": {
+      "A": "-36.0",
+      "B": "-60.0",
+      "C": "-48.0",
+      "D": "-84.0"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "b4d4d0fd-93f0-45eb-911f-4dad2839e738"
+  },
+  {
+    "question": "A pair of shoes is sold for 240 after a discount of 10%. What was the marked price?",
+    "options": {
+      "A": "160.0",
+      "B": "266.67",
+      "C": "373.34",
+      "D": "320.0"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "ffe683d7-1936-4953-8082-76c396d2f0de"
+  },
+  {
+    "question": "A value increases by 20% and then decreases by 20%. Find the net percentage change.",
+    "options": {
+      "A": "-5.6",
+      "B": "-4.8",
+      "C": "-3.2",
+      "D": "-4.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "6691f1aa-fbf1-4520-8544-2610ce7be2f6"
+  },
+  {
+    "question": "An item's price is increased by 10% and then a further increase of 20% is applied. What is the total effective increase?",
+    "options": {
+      "A": "25.6",
+      "B": "32.0",
+      "C": "19.2",
+      "D": "44.8"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "easy",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "ec2a1894-cbd7-47c4-a824-c1f1e2211ec1"
+  },
+  {
+    "question": "After losing 62.5% of its water due to evaporation, a tank contains 14200 liters. What was the original volume?",
+    "options": {
+      "A": "53013.34",
+      "B": "22720.0",
+      "C": "30293.34",
+      "D": "37866.67"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "0479dab5-c6ee-4f70-a8e3-2b07d42c8a72"
+  },
+  {
+    "question": "In a test, Alice scored 2100 marks while Bob scored 700 marks. By what percent are Alice's marks less than Bob's?",
+    "options": {
+      "A": "-120.0",
+      "B": "-240.0",
+      "C": "-160.0",
+      "D": "-200.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "081c9b33-2907-422c-b4c4-4e02f8177a2b"
+  },
+  {
+    "question": "A value increases by 50% and then decreases by 16.66%. Find the net percentage change.",
+    "options": {
+      "A": "25.01",
+      "B": "20.01",
+      "C": "30.01",
+      "D": "35.01"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "00018770-838d-40c0-84b5-2571d8b3f542"
+  },
+  {
+    "question": "If the price of fuel rises by 40% in January and 37.5% in February, what is the net percentage rise at the end of February?",
+    "options": {
+      "A": "92.5",
+      "B": "129.5",
+      "C": "111.0",
+      "D": "74.0"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "ec3c11cd-d242-46f5-b7e8-cafd90cdf2c8"
+  },
+  {
+    "question": "The length of a rectangle is increased by 60% and its breadth is decreased by 40%. Find the percentage change in its area.",
+    "options": {
+      "A": "-4.8",
+      "B": "-5.6",
+      "C": "-3.2",
+      "D": "-4.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "ac3bd0ce-703c-4a55-94dc-ceb7a199bc51"
+  },
+  {
+    "question": "After losing 37.5% of its water due to evaporation, a tank contains 14200 liters. What was the original volume?",
+    "options": {
+      "A": "18176.0",
+      "B": "31808.0",
+      "C": "13632.0",
+      "D": "22720.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "cdcc0ed1-bd51-4b84-8ad5-b0bd5fb7b26d"
+  },
+  {
+    "question": "If A's salary is 2100 and B's salary is 1050, by what percentage is A's salary lower than B's?",
+    "options": {
+      "A": "-140.0",
+      "B": "-100.0",
+      "C": "-60.0",
+      "D": "-80.0"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "edc5710f-8882-40d0-8cf3-2a828e146559"
+  },
+  {
+    "question": "If the price of fuel rises by 40% in January and 25% in February, what is the net percentage rise at the end of February?",
+    "options": {
+      "A": "75.0",
+      "B": "60.0",
+      "C": "90.0",
+      "D": "105.0"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "62e7013f-9cc6-439d-affc-312b115a87a6"
+  },
+  {
+    "question": "A trader marks up his goods by 33.33% and then gives another 37.5% hike. Find the cumulative percentage increase.",
+    "options": {
+      "A": "100.0",
+      "B": "50.0",
+      "C": "83.33",
+      "D": "116.66"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using successive_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_SUCCESSIVE_CHANGE",
+    "id": "5d135fd8-9711-4efc-be8a-a46e9b0c6f13"
+  },
+  {
+    "question": "The weight of a metal ore reduces by 37.5% during processing to 6240 kg. Find the initial weight.",
+    "options": {
+      "A": "7987.2",
+      "B": "13977.6",
+      "C": "11980.8",
+      "D": "9984.0"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using original_from_final_decrease",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_REVERSE_DECREASE",
+    "id": "7c06e77d-7690-42b0-9451-3c80bfd92a48"
+  },
+  {
+    "question": "If a worker's wages are increased by 12.5% and then decreased by 12.5%, what is the net change in his income?",
+    "options": {
+      "A": "-1.56",
+      "B": "-2.18",
+      "C": "-0.94",
+      "D": "-1.87"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using net_percent_change",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_NET_CHANGE",
+    "id": "56834ac1-7809-48bf-a354-99b5cd900615"
+  },
+  {
+    "question": "By what percentage is 1260 less than 1400?",
+    "options": {
+      "A": "8.0",
+      "B": "12.0",
+      "C": "10.0",
+      "D": "6.0"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using percentage_difference",
+    "category": "percentages",
+    "difficulty": "hard",
+    "concept_id": "PERCENTAGE_COMPARISON",
+    "id": "bc89e477-83d6-454e-9956-b1bdc8d904a9"
+  }
+]

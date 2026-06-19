@@ -1,0 +1,377 @@
+[
+  {
+    "question": "A cyclist riding at a constant speed of 90 km/h needs to pass through a tunnel that is 300 meters long from the moment the front wheel enters until the rear wheel exits. How much time will the cyclist take to completely clear the tunnel?",
+    "options": {
+      "A": "9.6 seconds",
+      "B": "12.0 seconds",
+      "C": "14.4 seconds",
+      "D": "16.8 seconds"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using train_crossing_time",
+    "category": "time speed distance and work",
+    "difficulty": "hard",
+    "concept_id": "TSD_TRAIN",
+    "id": "03db46ac-aa87-4de6-baf0-ec281068ac8b"
+  },
+  {
+    "question": "A courier delivers packages over two equal segments of a route, traveling the first segment at 70 km/h and the second at 120 km/h. What is the courier’s average speed for the entire delivery?",
+    "options": {
+      "A": "53.05 kmph",
+      "B": "88.42 kmph",
+      "C": "106.1 kmph",
+      "D": "123.79 kmph"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using average_speed_equal",
+    "category": "time speed distance and work",
+    "difficulty": "hard",
+    "concept_id": "TSD_AVG_SPEED",
+    "id": "c3a1a986-506e-4c45-99fd-475cce7e5a89"
+  },
+  {
+    "question": "A can complete a work in 20 days and B in 30 days. How long will they take together?",
+    "options": {
+      "A": "14.4 days",
+      "B": "9.6 days",
+      "C": "16.8 days",
+      "D": "12.0 days"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using work_together",
+    "category": "time speed distance and work",
+    "difficulty": "hard",
+    "concept_id": "TW_BASIC",
+    "id": "22567bdc-1bbc-4145-957a-c8fd35b38ba6"
+  },
+  {
+    "question": "A courier needs to deliver a package over a distance of 480 km, maintaining a constant speed of 80 km/h throughout the journey. How long will the delivery take?",
+    "options": {
+      "A": "4.8 hours",
+      "B": "8.4 hours",
+      "C": "6.0 hours",
+      "D": "3.6 hours"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using time_from_ds",
+    "category": "time speed distance and work",
+    "difficulty": "hard",
+    "concept_id": "TSD_TIME",
+    "id": "575af347-68e4-4430-8c26-42bf6fe7283e"
+  },
+  {
+    "question": "A river flows at a rate of 8 km/h, and a ferry's engine allows it to travel at 24 km/h in calm water. Determine the ferry's effective speed when traveling with the current.",
+    "options": {
+      "A": "25.6 kmph",
+      "B": "32.0 kmph",
+      "C": "19.2 kmph",
+      "D": "44.8 kmph"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using boat_stream_speed",
+    "category": "time speed distance and work",
+    "difficulty": "hard",
+    "concept_id": "TSD_BOAT_STREAM",
+    "id": "baa35b19-0a3e-4680-a841-c58d052a9a51"
+  },
+  {
+    "question": "A cyclist rides at a constant speed of 40 km/h for 2 hours. What is the total distance covered by the cyclist?",
+    "options": {
+      "A": "48.0 km",
+      "B": "80.0 km",
+      "C": "96.0 km",
+      "D": "64.0 km"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using distance_from_st",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TSD_DISTANCE",
+    "id": "09ef2015-0b0d-4133-a17b-b84ae3c10c58"
+  },
+  {
+    "question": "A cyclist pedals at 12 km/h on a calm day, but today a tailwind blows at 3 km/h. What is the cyclist’s effective speed with the wind?",
+    "options": {
+      "A": "9.0 kmph",
+      "B": "12.0 kmph",
+      "C": "15.0 kmph",
+      "D": "18.0 kmph"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using boat_stream_speed",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TSD_BOAT_STREAM",
+    "id": "f6f9104a-8c69-418a-b597-165f954b6248"
+  },
+  {
+    "question": "A courier delivers packages over a distance of 120 km in 2 hours. What is the courier's average speed?",
+    "options": {
+      "A": "48.0 kmph",
+      "B": "36.0 kmph",
+      "C": "60.0 kmph",
+      "D": "72.0 kmph"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using speed_from_dt",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TSD_SPEED",
+    "id": "8ba11b90-f4b0-47b5-a82a-fb5855a0c6ef"
+  },
+  {
+    "question": "A cyclist covers the same distance from home to the market at 40 km/h and returns home at 60 km/h. What is the average speed for the entire round trip?",
+    "options": {
+      "A": "67.2 kmph",
+      "B": "57.6 kmph",
+      "C": "28.8 kmph",
+      "D": "48.0 kmph"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using average_speed_equal",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TSD_AVG_SPEED",
+    "id": "a3524558-eeb1-47f6-beea-ec208dabd0c8"
+  },
+  {
+    "question": "A train departs from Station A and needs to reach Station B, which is 180 km away, traveling at a constant speed of 60 km/h. How long will the journey take?",
+    "options": {
+      "A": "3.0 hours",
+      "B": "3.6 hours",
+      "C": "2.4 hours",
+      "D": "1.8 hours"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using time_from_ds",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TSD_TIME",
+    "id": "9890fbe1-13fe-464b-b316-946a436cbe0c"
+  },
+  {
+    "question": "A train travels from City X to City Y in 12 hours, while another train covers the same distance in 15 hours. If both trains start simultaneously from opposite ends, how long will it take for them to meet each other?",
+    "options": {
+      "A": "8.0 days",
+      "B": "4.0 days",
+      "C": "9.34 days",
+      "D": "6.67 days"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using work_together",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TW_BASIC",
+    "id": "1c9888ce-6a88-408c-aa2f-c9cf6b7cbff4"
+  },
+  {
+    "question": "A is twice as efficient as B. If B can complete a work in 20 days, how long will A take?",
+    "options": {
+      "A": "6.0 days",
+      "B": "8.0 days",
+      "C": "10.0 days",
+      "D": "12.0 days"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using efficiency_work",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TW_EFFICIENCY",
+    "id": "bfff7200-88c6-4063-bb4d-66053c42862a"
+  },
+  {
+    "question": "A water pump can fill a reservoir in 10 hours, while a drainage valve can empty it in 20 hours. How long will it take to fill the reservoir when both are operating?",
+    "options": {
+      "A": "24.0 hours",
+      "B": "16.0 hours",
+      "C": "12.0 hours",
+      "D": "20.0 hours"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using pipes_fill_time",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TW_PIPES",
+    "id": "ca7591b9-c41c-4808-a53c-44eadac8682c"
+  },
+  {
+    "question": "A cyclist riding at a constant speed of 54 km/h needs to pass through a tunnel that is 100 meters long. How much time will it take for the cyclist to completely clear the tunnel?",
+    "options": {
+      "A": "8.0 seconds",
+      "B": "4.0 seconds",
+      "C": "9.34 seconds",
+      "D": "6.67 seconds"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using train_crossing_time",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TSD_TRAIN",
+    "id": "67951d00-b507-4325-a664-71b11c228d90"
+  },
+  {
+    "question": "A construction project pays a total of 600 to two workers. If Worker X works for 10 days and Worker Y works for 5 days, determine Worker X's earnings from the project.",
+    "options": {
+      "A": "400.0 currency",
+      "B": "560.0 currency",
+      "C": "480.0 currency",
+      "D": "240.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using work_wages",
+    "category": "time speed distance and work",
+    "difficulty": "easy",
+    "concept_id": "TW_WAGES",
+    "id": "cff874b2-aa8e-4029-940c-83d4ddfb86b0"
+  },
+  {
+    "question": "A cyclist riding at a constant speed of 72 km/h needs to pass through a tunnel that is 200 meters long. How much time will it take for the cyclist to completely clear the tunnel?",
+    "options": {
+      "A": "12.0 seconds",
+      "B": "10.0 seconds",
+      "C": "8.0 seconds",
+      "D": "6.0 seconds"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using train_crossing_time",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TSD_TRAIN",
+    "id": "4939ce21-0d34-4727-aa77-2f91c57a1214"
+  },
+  {
+    "question": "A construction project pays a total of 960 to two workers. If Worker X works for 12 days and Worker Y works for 6 days, determine Worker X's earnings from the total payment.",
+    "options": {
+      "A": "896.0 currency",
+      "B": "640.0 currency",
+      "C": "512.0 currency",
+      "D": "384.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using work_wages",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TW_WAGES",
+    "id": "ed9c2ac6-e21a-41f3-a20b-fff39586c059"
+  },
+  {
+    "question": "A delivery truck travels from warehouse A to warehouse B, covering a distance of 240 km in 2.5 hours. What is the average speed of the truck during the journey?",
+    "options": {
+      "A": "96.0 kmph",
+      "B": "57.6 kmph",
+      "C": "115.2 kmph",
+      "D": "76.8 kmph"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using speed_from_dt",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TSD_SPEED",
+    "id": "d46c7876-f9da-4067-b4c8-2eff382dc4d4"
+  },
+  {
+    "question": "A pipeline can be filled by Pump X in 18 hours and by Pump Y in 30 hours. How long will it take to fill the pipeline if both pumps are used simultaneously?",
+    "options": {
+      "A": "11.25 days",
+      "B": "9.0 days",
+      "C": "13.5 days",
+      "D": "6.75 days"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using work_together",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TW_BASIC",
+    "id": "083c6d0c-56dc-4a93-8d40-901f615154b5"
+  },
+  {
+    "question": "A delivery truck maintains a constant speed of 60 km/h while making its rounds for 5 hours. What is the total distance covered by the truck during this period?",
+    "options": {
+      "A": "300.0 km",
+      "B": "240.0 km",
+      "C": "180.0 km",
+      "D": "420.0 km"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using distance_from_st",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TSD_DISTANCE",
+    "id": "b693efa2-fd80-4f2d-88c2-f7ac59ca713d"
+  },
+  {
+    "question": "A pipe can fill a tank in 12 hours while another pipe empties it in 24 hours. How long will it take to fill the tank?",
+    "options": {
+      "A": "19.2 hours",
+      "B": "33.6 hours",
+      "C": "28.8 hours",
+      "D": "24.0 hours"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using pipes_fill_time",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TW_PIPES",
+    "id": "54814736-948c-42e9-8895-c3503e7c8cd9"
+  },
+  {
+    "question": "If A takes 15 days to complete a work and B is half as efficient, find the time taken by B.",
+    "options": {
+      "A": "18.0 days",
+      "B": "12.0 days",
+      "C": "15.0 days",
+      "D": "9.0 days"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using efficiency_work",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TW_EFFICIENCY",
+    "id": "341ee98d-660e-4daf-bd65-97947476e40b"
+  },
+  {
+    "question": "A delivery truck needs to cover a distance of 240 km to reach its destination. If the truck maintains a constant speed of 60 km/h, how long will the journey take?",
+    "options": {
+      "A": "3.2 hours",
+      "B": "4.0 hours",
+      "C": "2.4 hours",
+      "D": "4.8 hours"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using time_from_ds",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TSD_TIME",
+    "id": "cfb3fa6a-ce94-4012-8661-d56658ff5a44"
+  },
+  {
+    "question": "A cyclist pedals at a constant speed of 15 km/h on a flat road, while a tailwind blows at 5 km/h. Determine the cyclist's effective speed when traveling with the wind.",
+    "options": {
+      "A": "12.0 kmph",
+      "B": "16.0 kmph",
+      "C": "20.0 kmph",
+      "D": "24.0 kmph"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using boat_stream_speed",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TSD_BOAT_STREAM",
+    "id": "737d88ec-e459-444f-90cf-7865eae9f3f6"
+  },
+  {
+    "question": "A cyclist travels half of a fixed route at 60 km/h and the remaining half at 70 km/h. What is the cyclist's average speed for the entire journey?",
+    "options": {
+      "A": "51.7 kmph",
+      "B": "64.62 kmph",
+      "C": "77.54 kmph",
+      "D": "90.47 kmph"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using average_speed_equal",
+    "category": "time speed distance and work",
+    "difficulty": "medium",
+    "concept_id": "TSD_AVG_SPEED",
+    "id": "8db35391-76d6-45b1-9c3e-2472a97f1874"
+  }
+]

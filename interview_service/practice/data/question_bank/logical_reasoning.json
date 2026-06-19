@@ -1,0 +1,212 @@
+[
+  {
+    "question": "Aman walks 4 km north, then turns right and walks 3 km. After that, he turns right again and walks 4 km. How far is he from his starting point?",
+    "options": {
+      "A": "3 km",
+      "B": "4 km",
+      "C": "5 km",
+      "D": "7 km"
+    },
+    "correct_option": "A",
+    "explanation": "Aman ends up 3",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a family, John is the father of Mary. Mary has a brother named Tom. How is Tom related to John?",
+    "options": {
+      "A": "Son",
+      "B": "Nephew",
+      "C": "Brother",
+      "D": "Cousin"
+    },
+    "correct_option": "A",
+    "explanation": "Tom is Mary's brother, so Tom is also John's son.\n\n---",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a race of 8 participants, John finished 3rd, Mary finished 5th, and Tom finished 6th. If Sarah finished immediately after Mary, what position did Sarah finish in?",
+    "options": {
+      "A": "4th",
+      "B": "6th",
+      "C": "7th",
+      "D": "8th"
+    },
+    "correct_option": "C",
+    "explanation": "Mary finished 5th, and Sarah",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company noticed that whenever there is heavy rain, the delivery of goods is delayed. What is the most likely cause of the delay?",
+    "options": {
+      "A": "Heavy rain causes traffic jams",
+      "B": "Delivery trucks are always late",
+      "C": "Goods are not packed properly",
+      "D": "Drivers take longer breaks"
+    },
+    "correct_option": "A",
+    "explanation": "Heavy rain likely causes traffic jams, which in turn delay deliveries.\n\n---\n\nQuestion",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a class, all students who study mathematics also study physics. Some students who study physics also study chemistry. If John studies mathematics, which of the following is definitely true?",
+    "options": {
+      "A": "John studies chemistry",
+      "B": "John studies physics",
+      "C": "John studies biology",
+      "D": "John does not study physics"
+    },
+    "correct_option": "B",
+    "explanation": "All mathematics students study physics, so John must study physics.\n\n---",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a race, John finished 3rd, Mary finished 2nd, and Sam finished 5th. If Sam finished ahead of Lisa, who finished 6th, what is Lisa's position relative to John?",
+    "options": {
+      "A": "Ahead of John",
+      "B": "Behind John",
+      "C": "Same position as John",
+      "D": "Cannot be determined"
+    },
+    "correct_option": "B",
+    "explanation": "Lisa finished 6",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company decided to increase the salary of all employees by 10% to boost morale. Which assumption is most likely made by the company?",
+    "options": {
+      "A": "Employees will work harder after the raise",
+      "B": "Employees do not need any other benefits",
+      "C": "Increasing salary will decrease employee turnover",
+      "D": "Employees do not like their current work environment"
+    },
+    "correct_option": "C",
+    "explanation": "The company assumes that a salary",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A man is standing facing north. He turns 90 degrees to his right, then 180 degrees to his left, and finally 90 degrees to his right. Which direction is he facing now?",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "correct_option": "A",
+    "explanation": "Turns lead him back to the original north direction.\n\n---",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "All cats are animals. Some animals are pets. Which of the following conclusions is definitely true?",
+    "options": {
+      "A": "All pets are cats",
+      "B": "Some cats are pets",
+      "C": "Some animals are cats",
+      "D": "All animals are pets"
+    },
+    "correct_option": "C",
+    "explanation": "Since all cats are animals, some animals must be cats. The other options cannot be conclusively drawn.\n\n---",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Ravi walks 5 km north, then turns right and walks 3 km. After that, he turns right again and walks 5 km. How far is he from his starting point?",
+    "options": {
+      "A": "3 km",
+      "B": "5 km",
+      "C": "8 km",
+      "D": "2 km"
+    },
+    "correct_option": "A",
+    "explanation": "Ravi ends up 3 km east from the starting",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a class of 40 students, 25 like football, 18 like basketball, and 10 like both football and basketball. How many students like neither football nor basketball?",
+    "options": {
+      "A": "5",
+      "B": "7",
+      "C": "10",
+      "D": "3"
+    },
+    "correct_option": "B",
+    "explanation": "Total liking football or basketball = 25 + 18 - 10 = 33",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a certain code, TABLE is written as UBCMF. How is CHAIR written in that code?",
+    "options": {
+      "A": "DIBJS",
+      "B": "DIBKR",
+      "C": "DIBJR",
+      "D": "DJBKR"
+    },
+    "correct_option": "A",
+    "explanation": "Each letter is shifted by +1 in the alphabet (T→U, A→B, etc.).\n\n---",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a race of 8 runners, John finished ahead of 5 runners but behind 2 runners. What is John's position in the race?",
+    "options": {
+      "A": "3rd",
+      "B": "4th",
+      "C": "5th",
+      "D": "6th"
+    },
+    "correct_option": "B",
+    "explanation": "John is ahead of 5 runners, so 5 runners are behind him. He is",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a certain code, \"APPLE\" is written as \"ZKOVD\". How is \"MANGO\" written in that code?",
+    "options": {
+      "A": "NZMHP",
+      "B": "NZMLP",
+      "C": "NZNHP",
+      "D": "NZMGO"
+    },
+    "correct_option": "A",
+    "explanation": "Each letter is coded by replacing it with the letter that is one position before it in the alphabet",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a race of 10 runners, John finished 4th, and Mary finished 2nd. If only one person finished between John and Mary, what is the position of the person who finished just before John?",
+    "options": {
+      "A": "3rd",
+      "B": "5th",
+      "C": "1st",
+      "D": "6th"
+    },
+    "correct_option": "A",
+    "explanation": "Mary is 2nd,",
+    "category": "logical_reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A bat and a ball together cost $1.10. The bat costs $1.00 more than the ball. How much does the ball cost?",
+    "options": {
+      "A": "$0.05",
+      "B": "$0.10",
+      "C": "$0.15",
+      "D": "$0.20"
+    },
+    "correct_option": "A",
+    "explanation": "Let's assume the cost of the ball is x, then the cost of the bat is x + $1.00, and x + (x + $1.00) = $1.10, solving this equation gives x = $0.05.",
+    "category": "logical_reasoning",
+    "difficulty": "easy",
+    "id": "383ef152-1562-452a-9851-d53903b11b50",
+    "source": "role"
+  }
+]

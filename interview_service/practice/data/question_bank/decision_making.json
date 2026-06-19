@@ -1,0 +1,103 @@
+[
+  {
+    "question": "You have two projects to complete: Project A will take 3 days and yield $300, while Project B will take 5 days and yield $700. You only have 5 days available. Which project should you prioritize to maximize your earnings?",
+    "options": {
+      "A": "Project A",
+      "B": "Project B",
+      "C": "Both projects simultaneously",
+      "D": "Neither project"
+    },
+    "correct_option": "B",
+    "explanation": "",
+    "category": "decision_making",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company must choose between two suppliers. Supplier A offers lower prices but has a longer delivery time. Supplier B is more expensive but delivers faster. If the company values timely delivery more than cost savings, which supplier should they choose?",
+    "options": {
+      "A": "Supplier A",
+      "B": "Supplier B",
+      "C": "Both suppliers equally",
+      "D": "Neither supplier"
+    },
+    "correct_option": "B",
+    "explanation": "Choosing Supplier",
+    "category": "decision_making",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company is evaluating two projects: Project A requires an investment of $100,000 and is expected to generate $150,000 in revenue, while Project B requires an investment of $80,000 and is expected to generate $120,000 in revenue. Which project should the company prioritize based on the cost vs. benefit analysis?",
+    "options": {
+      "A": "Project A",
+      "B": "Project B",
+      "C": "Both projects are equal",
+      "D": "Neither project is worth pursuing"
+    },
+    "correct_option": "B",
+    "explanation": "Project B offers a higher return on investment relative to its cost, making it the better option to prioritize.",
+    "category": "decision_making",
+    "difficulty": "medium",
+    "id": "fd0d0197-d9e3-4694-851a-d0015435519e",
+    "source": "role"
+  },
+  {
+    "question": "A project manager is assessing two potential projects. Project A has a high potential return but also high risks, while Project B has a lower return but minimal risks. Which project should be prioritized if the company is currently in a stable financial position and can afford to take some risks?",
+    "options": {
+      "A": "Project A",
+      "B": "Project B",
+      "C": "Neither project",
+      "D": "Both projects equally"
+    },
+    "correct_option": "A",
+    "explanation": "Project A should be prioritized as the company can afford to take risks for a higher potential return.",
+    "category": "decision_making",
+    "difficulty": "medium",
+    "id": "af65d12a-b302-4a69-be3d-295ceb402975",
+    "source": "role"
+  },
+  {
+    "question": "A company is considering two projects, A and B. Project A has a 70% chance of yielding a profit of $100,000, while Project B has a 40% chance of yielding a profit of $250,000. Which project has a higher expected value?",
+    "options": {
+      "A": "Project A",
+      "B": "Project B",
+      "C": "Both projects have the same expected value",
+      "D": "Cannot determine without more information"
+    },
+    "correct_option": "B",
+    "explanation": "The expected value of Project A is $70,000 (0.7 * $100,000) and for Project B, it is $100,000 (0.4 * $250,000). Thus, Project B has a higher expected value.",
+    "category": "decision_making",
+    "difficulty": "medium",
+    "id": "ec6b8100-60c3-4ee0-8970-160edf55832c",
+    "source": "role"
+  },
+  {
+    "question": "A company is considering launching a new product. The expected profit is $100,000, but the market research indicates a 30% chance of failure, which would result in a loss of $50,000. What is the expected monetary value (EMV) of the decision to launch the product?",
+    "options": {
+      "A": "$10,000",
+      "B": "$20,000",
+      "C": "$30,000",
+      "D": "$40,000"
+    },
+    "correct_option": "A",
+    "explanation": "The EMV is calculated as (0.7 * $100,000) + (0.3 * -$50,000) = $70,000 - $15,000 = $55,000.",
+    "category": "decision_making",
+    "difficulty": "medium",
+    "id": "395deebb-5cbc-4068-b8b5-1f6ebcc51cf4",
+    "source": "role"
+  },
+  {
+    "question": "A project manager has three tasks to complete: Task A (high priority, low risk), Task B (medium priority, high risk), and Task C (low priority, medium risk). Which task should the project manager prioritize first?",
+    "options": {
+      "A": "Task A",
+      "B": "Task B",
+      "C": "Task C",
+      "D": "All tasks should be done simultaneously"
+    },
+    "correct_option": "A",
+    "explanation": "Task A is high priority and low risk, making it the best choice to prioritize first for effective decision-making.",
+    "category": "decision_making",
+    "difficulty": "medium",
+    "id": "bf9a2428-e67d-4f83-9109-c101fe6def57",
+    "source": "role"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Which of the following is the most common indicator of a CPU bottleneck in a system process?",
+    "options": {
+      "A": "High disk I/O utilization",
+      "B": "High CPU usage consistently above 90%",
+      "C": "Low network bandwidth usage",
+      "D": "Excessive RAM consumption"
+    },
+    "correct_option": "B",
+    "explanation": "A CPU bottleneck occurs when the processor is unable to keep up with the workload, typically indicated by sustained high CPU usage.",
+    "category": "system_process",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a computer system, the CPU is running at 100% utilization while other components like disk I/O and network are underutilized. What is the most likely bottleneck in this scenario?",
+    "options": {
+      "A": "Disk I/O speed",
+      "B": "CPU processing power",
+      "C": "Network bandwidth",
+      "D": "Available RAM"
+    },
+    "correct_option": "B",
+    "explanation": "Since the CPU is fully utilized while other resources are idle, the bottleneck is the CPU's processing power, limiting overall system performance.",
+    "category": "system_process",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A Linux system administrator observes that a critical process is consistently consuming 95% of CPU resources, causing other processes to experience significant delays. Upon further investigation, the process is found to be stuck in an infinite loop due to a deadlock between two threads. Which of the following actions is the MOST effective immediate step to mitigate the bottleneck while preserving system stability?",
+    "options": {
+      "A": "Terminate the process using `kill -9` to free up CPU resources and restart it manually.",
+      "B": "Use `nice -n -20` to prioritize the process and reduce its CPU usage.",
+      "C": "Identify and resolve the deadlock by analyzing thread dumps and patching the application code.",
+      "D": "Throttle the process using `cpulimit` to cap its CPU usage at 50% temporarily."
+    },
+    "correct_option": "A",
+    "explanation": "Terminating the deadlocked process (`kill -9`) is the fastest way to restore system stability, while long-term fixes (like patching code) require more time. Other options either worsen the issue (B) or delay resolution (D).",
+    "category": "system_process",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A Linux-based web server is experiencing intermittent slowdowns during peak traffic hours. The system administrator observes that CPU usage spikes to 100% during these periods, but memory and disk I/O remain within normal limits. Which of the following actions is the MOST effective way to identify the bottleneck and optimize the process?",
+    "options": {
+      "A": "Use `top` to monitor CPU usage and manually check each process for high CPU consumption",
+      "B": "Implement a load balancer to distribute traffic across multiple servers",
+      "C": "Use `perf` to profile CPU usage and identify hotspots in the application code",
+      "D": "Increase the server’s RAM to reduce swapping and improve performance"
+    },
+    "correct_option": "C",
+    "explanation": "`perf` provides low-overhead CPU profiling to pinpoint performance-critical sections of code, while `top` only shows high-level process metrics without root-cause analysis.",
+    "category": "system_process",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In a multi-stage system process, the CPU utilization is consistently at 95%, while disk I/O and memory usage remain low. Which of the following is the most likely bottleneck, and what is the recommended optimization?",
+    "options": {
+      "A": "Disk I/O bottleneck; increase disk read/write speed by using SSDs",
+      "B": "CPU bottleneck; optimize or parallelize CPU-bound tasks",
+      "C": "Memory bottleneck; add more RAM to reduce swapping",
+      "D": "Network bottleneck; upgrade the network bandwidth"
+    },
+    "correct_option": "B",
+    "explanation": "High CPU utilization with low disk I/O and memory usage indicates a CPU bottleneck, requiring optimization or parallelization of CPU-bound processes.",
+    "category": "system_process",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "question": "A customer complains about a delayed delivery. What is the best immediate action to take?",
+    "options": {
+      "A": "Ignore the complaint and wait for the customer to follow up.",
+      "B": "Apologize, explain the reason, and provide a revised delivery date.",
+      "C": "Offer a discount on the next purchase without addressing the issue.",
+      "D": "Blame the logistics team and ask the customer to contact them."
+    },
+    "correct_option": "B",
+    "explanation": "Acknowledging the issue and providing a solution maintains customer trust.",
+    "category": "business_judgement",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company is deciding between two projects: Project X offers a 10% return with low risk, while Project Y offers a 20% return with high risk. Which project should the company prioritize if its primary goal is to maximize shareholder value?",
+    "options": {
+      "A": "Project X, as it provides a stable return.",
+      "B": "Project Y, as higher returns justify the risk.",
+      "C": "Neither, as both projects are equally valuable.",
+      "D": "Depends on the company's risk tolerance."
+    },
+    "correct_option": "B",
+    "explanation": "Maximizing shareholder value typically involves higher returns, even with higher risk.",
+    "category": "business_judgement",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company is deciding between two marketing strategies: Strategy X (low cost, moderate reach) and Strategy Y (high cost, high reach). The company has limited funds. What should be the primary consideration?",
+    "options": {
+      "A": "The long-term brand recognition benefits of Strategy Y",
+      "B": "The immediate sales impact of Strategy X",
+      "C": "The cost-to-reach ratio of each strategy",
+      "D": "The competitor's response to either strategy"
+    },
+    "correct_option": "C",
+    "explanation": "The primary consideration should be the cost-to-reach ratio, as the company has limited funds.",
+    "category": "business_judgement",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company wants to increase its market share by offering a discount to new customers. However, this may reduce the profit margin per sale. What is the best course of action?",
+    "options": {
+      "A": "Offer the discount only to high-value customers to maintain profitability.",
+      "B": "Ignore the discount and focus on maintaining current profit margins.",
+      "C": "Offer the discount to all customers to maximize market share.",
+      "D": "Increase prices for existing customers to offset the discount."
+    },
+    "correct_option": "A",
+    "explanation": "Targeting high-value customers balances market share growth with profitability.",
+    "category": "business_judgement",
+    "difficulty": "easy",
+    "subtopic": null,
+    "id": "b1e22cf7-7340-4788-bcf8-46511d24341e"
+  },
+  {
+    "question": "A company must decide between investing in a scalable automated customer service platform or maintaining a personalized but less scalable manual support team. The automated platform reduces costs and can handle increased volume but may decrease customer satisfaction due to less personal interaction. What is the best business judgement to maximize long-term customer loyalty and profitability?",
+    "options": {
+      "A": "Prioritize the automated platform to scale rapidly and reduce costs, accepting some loss in personalization.",
+      "B": "Maintain the manual support team to ensure high customer satisfaction, even if it limits growth and increases costs.",
+      "C": "Implement a hybrid model with automated support for common issues and manual support for complex queries.",
+      "D": "Delay investment until customer preferences are clearer to avoid premature scaling or cost increases."
+    },
+    "correct_option": "C",
+    "explanation": "A hybrid approach balances scalability and customer focus, optimizing both cost-efficiency and satisfaction for long-term loyalty and profitability.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company plans to launch a new product targeting a niche customer segment. To scale efficiently, they must decide between investing heavily in personalized customer service or automating support with AI-driven chatbots. Considering customer focus, scalability judgment, and potential business trade-offs, which approach best balances long-term impact and growth?",
+    "options": {
+      "A": "Invest heavily in personalized customer service to maximize customer satisfaction despite higher costs.",
+      "B": "Fully automate support with AI chatbots to scale rapidly but risk lower customer satisfaction.",
+      "C": "Combine AI chatbots for initial queries with personalized service for complex issues to balance cost and customer focus.",
+      "D": "Delay the product launch to gather more customer data before deciding on the support model."
+    },
+    "correct_option": "C",
+    "explanation": "Option C balances scalability and customer focus by leveraging automation for efficiency while maintaining personalized service for critical interactions, optimizing long-term impact.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company wants to improve customer satisfaction but has limited resources. They can either invest in faster delivery times, enhance product quality, or improve customer support. Improving delivery times may reduce product quality slightly, while enhancing customer support requires additional hiring costs. Which decision best balances customer focus and business tradeoff?",
+    "options": {
+      "A": "Prioritize faster delivery times despite a slight drop in product quality",
+      "B": "Invest in enhancing product quality, accepting slower delivery times",
+      "C": "Improve customer support by hiring more staff, keeping current quality and delivery",
+      "D": "Maintain current operations to avoid any tradeoffs"
+    },
+    "correct_option": "C",
+    "explanation": "Improving customer support enhances customer experience without compromising product quality or delivery, balancing customer focus and business tradeoff effectively.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company plans to launch a new product aimed at improving customer satisfaction. However, the product requires significant investment in technology that may limit the company's ability to scale quickly. Considering customer focus, scalability judgment, and impact analysis, what should be the primary factor in deciding whether to proceed with the launch?",
+    "options": {
+      "A": "Prioritize immediate customer satisfaction even if scalability is limited in the short term.",
+      "B": "Delay the launch until the technology can support rapid scalability to maximize long-term growth.",
+      "C": "Launch a minimal viable product to test customer response while planning for scalability improvements.",
+      "D": "Focus solely on cost reduction to ensure profitability before considering customer impact."
+    },
+    "correct_option": "C",
+    "explanation": "Launching a minimal viable product balances customer focus and scalability, allowing impact analysis through real customer feedback before full investment.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company plans to launch a new product aimed at a niche market segment. To ensure scalability and customer satisfaction, which of the following strategies would best balance impact analysis, scalability judgement, and customer focus?",
+    "options": {
+      "A": "Conduct extensive market research to identify customer pain points, develop a scalable prototype, and gather continuous customer feedback before full-scale launch",
+      "B": "Focus primarily on rapid product development and mass marketing to quickly capture market share, delaying customer feedback until after launch",
+      "C": "Limit the product features to reduce costs, assuming the niche market will accept fewer functionalities for a lower price",
+      "D": "Launch the product in a single region without scalability considerations, then expand only if initial sales are strong"
+    },
+    "correct_option": "A",
+    "explanation": "Option A integrates thorough impact analysis, scalability planning, and customer focus, ensuring the product meets customer needs while being scalable.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company must decide whether to invest in scaling its customer support team or enhancing its self-service digital platform. Scaling the support team improves personalized service but increases operational costs significantly. Enhancing the digital platform reduces costs and serves more customers simultaneously but may frustrate those needing human assistance. Which approach best balances scalability and customer focus to maximize long-term business impact?",
+    "options": {
+      "A": "Invest solely in scaling the customer support team to maintain high personalization.",
+      "B": "Invest solely in enhancing the digital platform to maximize scalability and reduce costs.",
+      "C": "Prioritize enhancing the digital platform while maintaining a lean, skilled support team for complex issues.",
+      "D": "Avoid investment in both areas to preserve current cost structure and service levels."
+    },
+    "correct_option": "C",
+    "explanation": "Option C balances scalability and customer focus by leveraging technology for broad reach while retaining human support for complex needs, optimizing long-term impact.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company is considering launching a new product that requires a significant investment in R&D and marketing. The product could either cannibalize sales of an existing product or attract new customers. Which of the following is the most critical factor to analyze before making the launch decision?",
+    "options": {
+      "A": "The potential increase in total market size due to the new product",
+      "B": "The cost of R&D and marketing for the new product",
+      "C": "The profit margin of the existing product compared to the new product",
+      "D": "The time required to break even on the investment"
+    },
+    "correct_option": "A",
+    "explanation": "Understanding whether the new product expands the total market or just shifts existing customers is crucial to assessing the true impact on overall revenue and profitability.",
+    "category": "business_judgement",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A company wants to expand its product line but has limited resources. Investing heavily in new products may reduce funds available for improving customer service. What is the best business tradeoff approach in this scenario?",
+    "options": {
+      "A": "Prioritize product expansion as it drives revenue growth, even if customer service temporarily declines",
+      "B": "Focus solely on customer service to maintain current customers, delaying product expansion",
+      "C": "Allocate resources to balance moderate product expansion while maintaining acceptable customer service levels",
+      "D": "Stop all investments until more resources are available to avoid any tradeoff"
+    },
+    "correct_option": "C",
+    "explanation": "Balancing moderate product expansion with maintaining customer service ensures sustainable growth without sacrificing customer satisfaction.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A retail company wants to improve customer satisfaction by reducing checkout wait times. They have two options: hire more cashiers or implement self-checkout kiosks. Hiring more cashiers increases operational costs significantly, while self-checkout kiosks require an initial investment but reduce long-term costs. Which option should the company prioritize to balance customer focus and business tradeoff?",
+    "options": {
+      "A": "Hire more cashiers to provide personalized service despite higher costs",
+      "B": "Implement self-checkout kiosks to reduce wait times and operational costs over time",
+      "C": "Do nothing and maintain current operations to avoid additional expenses",
+      "D": "Reduce store hours to manage customer flow and lower costs"
+    },
+    "correct_option": "B",
+    "explanation": "Implementing self-checkout kiosks balances customer focus by reducing wait times and manages costs better long-term, making it the optimal business tradeoff.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company receives frequent customer complaints about delayed deliveries. To improve customer satisfaction, which of the following actions should the company prioritize?",
+    "options": {
+      "A": "Increase marketing efforts to attract new customers",
+      "B": "Invest in supply chain and logistics improvements",
+      "C": "Launch a new product line to diversify offerings",
+      "D": "Reduce product prices to increase sales volume"
+    },
+    "correct_option": "B",
+    "explanation": "Improving supply chain and logistics directly addresses delivery delays, enhancing customer satisfaction.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company is considering launching a new product that requires significant upfront investment but has the potential to capture a new market segment. However, diverting resources to this product may slow down improvements in their existing best-selling product. What is the best business tradeoff the company should consider?",
+    "options": {
+      "A": "Prioritize the new product launch to expand market share despite slowing existing product improvements.",
+      "B": "Focus solely on improving the existing product to maximize current revenue streams.",
+      "C": "Balance investment between the new product and existing product improvements to manage risk and growth.",
+      "D": "Postpone the new product launch indefinitely until the existing product reaches peak performance."
+    },
+    "correct_option": "C",
+    "explanation": "Balancing investment allows the company to pursue growth opportunities while maintaining current revenue, managing risk effectively.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company plans to launch a new customer support app to improve service quality. To ensure scalability, which factor should the company prioritize in the app design?",
+    "options": {
+      "A": "Integrating multiple payment gateways immediately",
+      "B": "Designing the app architecture to handle increasing user load smoothly",
+      "C": "Adding as many features as possible at the initial launch",
+      "D": "Focusing primarily on the app’s visual design over backend performance"
+    },
+    "correct_option": "B",
+    "explanation": "Scalability requires designing the app to efficiently handle growing user numbers, ensuring smooth performance as demand increases.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company plans to scale its customer support operations by implementing an AI-driven chatbot to handle common queries. Which of the following is the most important factor to ensure the scalability of this solution without negatively impacting customer satisfaction?",
+    "options": {
+      "A": "The chatbot should handle only 10% of queries to keep human agents in control.",
+      "B": "The chatbot must be able to learn and improve from customer interactions over time.",
+      "C": "The company should reduce the number of support agents to cut costs immediately.",
+      "D": "The chatbot should only respond with pre-defined generic answers to speed up responses."
+    },
+    "correct_option": "B",
+    "explanation": "An AI chatbot that learns and improves over time can handle increasing query volumes effectively while maintaining or enhancing customer satisfaction, ensuring scalability.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company wants to improve customer satisfaction but has a limited budget. They can either invest in faster delivery times or enhance product quality. Which approach demonstrates better customer focus while considering business tradeoffs?",
+    "options": {
+      "A": "Invest in faster delivery to meet customer expectations quickly",
+      "B": "Enhance product quality to reduce returns and improve long-term satisfaction",
+      "C": "Split the budget equally between delivery and quality improvements",
+      "D": "Delay investment until more budget is available"
+    },
+    "correct_option": "B",
+    "explanation": "Enhancing product quality addresses core customer needs and reduces issues, leading to sustained satisfaction despite budget constraints.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company plans to launch a new product that requires significant investment in technology and marketing. To ensure scalability, which factor should the company prioritize to maximize long-term impact and customer satisfaction?",
+    "options": {
+      "A": "Investing heavily in a single large market to quickly gain market share",
+      "B": "Developing a flexible product design that can be adapted based on customer feedback",
+      "C": "Minimizing initial costs by limiting product features and marketing efforts",
+      "D": "Focusing solely on short-term sales targets to boost immediate revenue"
+    },
+    "correct_option": "B",
+    "explanation": "A flexible product design allows the company to adapt based on customer feedback, ensuring scalability, long-term impact, and enhanced customer satisfaction.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company is considering launching a new product that requires a significant investment. However, this investment will reduce the budget for existing products. Which of the following should the company prioritize to make a sound business judgment?",
+    "options": {
+      "A": "Focus solely on the potential profit of the new product.",
+      "B": "Analyze the impact on customer satisfaction for existing products.",
+      "C": "Ignore the existing products and concentrate on the new product's marketing.",
+      "D": "Invest equally in both new and existing products without analysis."
+    },
+    "correct_option": "B",
+    "explanation": "Prioritizing customer satisfaction for existing products is essential to maintain brand loyalty and ensure overall business success while considering new investments.",
+    "category": "business_judgement",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "question": "A pie chart shows the distribution of sales in four regions: North (30%), South (25%), East (20%), and West (25%). If the total sales amount to $200,000, which region has sales equal to $50,000?",
+    "options": {
+      "A": "East",
+      "B": "South",
+      "C": "West",
+      "D": "North"
+    },
+    "correct_option": "C",
+    "explanation": "",
+    "category": "data_interpretation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The following line graph shows the monthly sales of a company over six months. Which month had the highest percentage increase in sales compared to the previous month?",
+    "options": {
+      "A": "February",
+      "B": "March",
+      "C": "April",
+      "D": "May"
+    },
+    "correct_option": "B",
+    "explanation": "March shows the steepest upward slope, indicating the highest percentage increase in sales compared to February.",
+    "category": "data_interpretation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a key insight when interpreting a bar chart showing monthly sales data?",
+    "options": {
+      "A": "The highest bar represents the month with the lowest sales.",
+      "B": "The length of each bar corresponds to the sales volume for that month.",
+      "C": "The color of the bars indicates the sales team responsible.",
+      "D": "The x-axis represents the total annual sales."
+    },
+    "correct_option": "B",
+    "explanation": "The length of bars in a bar chart directly represents the quantitative value (sales volume) for each category (month).",
+    "category": "data_interpretation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A table shows the monthly sales of four products (X, Y, Z, W) in a store. The sales figures (in units) for January are as follows:\n- X: 120\n- Y: 150\n- Z: 90\n- W: 180\n\nWhich product had the highest sales in January?",
+    "options": {
+      "A": "X",
+      "B": "Y",
+      "C": "Z",
+      "D": "W"
+    },
+    "correct_option": "D",
+    "explanation": "Product W had the highest sales with 180 units.",
+    "category": "data_interpretation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following best describes a trend in data interpretation?",
+    "options": {
+      "A": "A sudden spike in data points",
+      "B": "A consistent pattern or direction over time",
+      "C": "Random fluctuations without any pattern",
+      "D": "A single data point that stands out"
+    },
+    "correct_option": "B",
+    "explanation": "A trend refers to a consistent pattern or direction in data over time, not isolated events or random fluctuations.",
+    "category": "data_interpretation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company’s sales data for the last five years shows a steady increase of 10% per year. If the sales in the first year were $100,000, what will be the sales in the fifth year?",
+    "options": {
+      "A": "$146,410",
+      "B": "$150,000",
+      "C": "$120,000",
+      "D": "$110,000"
+    },
+    "correct_option": "A",
+    "explanation": "The sales in the fifth year can be calculated using the formula for compound interest: Final Amount = Principal × (1 + Rate)^Time. Here, it is $100,000 × (1 + 0.10)^4 = $146,410.",
+    "category": "data_interpretation",
+    "difficulty": "medium",
+    "id": "05ffeb70-6463-4fee-955d-2787df5724e1",
+    "source": "role"
+  },
+  {
+    "question": "A bar chart shows the sales of four different products (A, B, C, D) over the first quarter of the year. Product A sold 150 units, Product B sold 200 units, Product C sold 250 units, and Product D sold 300 units. What is the percentage contribution of Product C to the total sales of all products?",
+    "options": {
+      "A": "25%",
+      "B": "30%",
+      "C": "35%",
+      "D": "40%"
+    },
+    "correct_option": "B",
+    "explanation": "Total sales = 150 + 200 + 250 + 300 = 900 units. Product C's contribution = (250/900) * 100 = 27.78%, which rounds to approximately 30%.",
+    "category": "data_interpretation",
+    "difficulty": "medium",
+    "id": "982930a8-3754-444d-a45a-b8e109908702",
+    "source": "role"
+  }
+]

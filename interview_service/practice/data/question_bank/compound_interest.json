@@ -1,0 +1,557 @@
+[
+  {
+    "question": "A startup founder invests 75000 in a high-yield savings account offering 20% annual interest compounded yearly. What will be the total value of the investment after 5 years?",
+    "options": {
+      "A": "261273.6 currency",
+      "B": "186624.0 currency",
+      "C": "149299.2 currency",
+      "D": "223948.8 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_AMOUNT",
+    "id": "2407350e-81cb-4d36-9a13-954037ab6541"
+  },
+  {
+    "question": "A startup founder invests 64000 in a high-yield savings account offering an annual growth rate of 16.66% compounded annually. What will be the total interest earned after 4 years?",
+    "options": {
+      "A": "32724.48 currency",
+      "B": "43632.64 currency",
+      "C": "54540.8 currency",
+      "D": "76357.12 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_BASIC",
+    "id": "8a0edd85-684f-4595-b570-1cf8aa20ce5c"
+  },
+  {
+    "question": "A startup invests 25000 in a high-yield savings account offering 14% annual interest, while a competitor deposits the same amount in a simple interest scheme at the same rate. What is the difference in earnings between the two accounts after 3 years?",
+    "options": {
+      "A": "1846.32 currency",
+      "B": "2154.04 currency",
+      "C": "923.16 currency",
+      "D": "1538.6 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "4938fd6f-5ef1-42b9-a1d6-8ffa47bafb42"
+  },
+  {
+    "question": "A tech startup receives a seed funding of 64000 and agrees to repay it with compound interest at a rate of 18% compounded semi-annually over 2.5 years. What will be the total compound interest accrued by the end of the repayment period?",
+    "options": {
+      "A": "20683.16 currency",
+      "B": "48260.7 currency",
+      "C": "34471.93 currency",
+      "D": "27577.54 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "2838c8b9-031b-4b64-bb78-eba361e72a59"
+  },
+  {
+    "question": "A savings account offers a half-yearly interest rate of 20%. If 2000 is deposited into this account, what will be the compound interest earned after 1 years?",
+    "options": {
+      "A": "420.0 currency",
+      "B": "252.0 currency",
+      "C": "336.0 currency",
+      "D": "504.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "easy",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "e3454eb1-9696-46ca-b90b-09111fee10e0"
+  },
+  {
+    "question": "If a savings account starts with a balance of 1000 and earns an annual interest rate of 5%, what will the total balance be after 2 years?",
+    "options": {
+      "A": "882.0 currency",
+      "B": "661.5 currency",
+      "C": "1323.0 currency",
+      "D": "1102.5 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "easy",
+    "concept_id": "CI_AMOUNT",
+    "id": "32159d62-441e-4a67-8a63-57bd0b9999e2"
+  },
+  {
+    "question": "A startup invests 5000 in a high-yield savings account offering 10% annual interest compounded yearly. What will be the total compound interest earned after 2 years?",
+    "options": {
+      "A": "630.0 currency",
+      "B": "1260.0 currency",
+      "C": "1050.0 currency",
+      "D": "840.0 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "easy",
+    "concept_id": "CI_BASIC",
+    "id": "6e61f0da-8524-48b9-84d2-70ff6fba1abe"
+  },
+  {
+    "question": "If a farmer invests 1000 in a savings scheme for his agricultural equipment, what is the difference between the compound interest and simple interest earned after 2 years at an annual rate of 10%?",
+    "options": {
+      "A": "10.0 currency",
+      "B": "8.0 currency",
+      "C": "6.0 currency",
+      "D": "12.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "easy",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "157b77f5-b775-4f0f-b9a6-f404d38d6ccc"
+  },
+  {
+    "question": "If a startup receives an initial funding of 31250 at an annual growth rate of 8%, what will be the total interest earned after 3 years if the returns are reinvested each year?",
+    "options": {
+      "A": "11362.4 currency",
+      "B": "9739.2 currency",
+      "C": "8116.0 currency",
+      "D": "6492.8 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_BASIC",
+    "id": "2330533d-3bf9-4338-a0a4-65401cf25642"
+  },
+  {
+    "question": "A startup invests 32000 in a high-yield savings account offering 12% p.a. interest, compounded half-yearly. Calculate the total compound interest earned after 2 years.",
+    "options": {
+      "A": "6719.41 currency",
+      "B": "11758.96 currency",
+      "C": "10079.11 currency",
+      "D": "8399.26 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "54362e2a-7a75-46d3-9356-b711dcc186c6"
+  },
+  {
+    "question": "If a startup receives an initial investment of 15625 at an annual growth rate of 12%, what will be the total value of the investment after 4 years?",
+    "options": {
+      "A": "29503.49 currency",
+      "B": "19668.99 currency",
+      "C": "24586.24 currency",
+      "D": "34420.74 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_AMOUNT",
+    "id": "17fffbdf-35c1-49a1-9ea7-806721b83a0c"
+  },
+  {
+    "question": "A startup invests 12000 in a high-yield savings account for 2 years at an annual interest rate of 12%. What is the difference between the compound interest and simple interest earned on this investment?",
+    "options": {
+      "A": "138.24 currency",
+      "B": "172.8 currency",
+      "C": "207.36 currency",
+      "D": "241.92 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "d55f0c97-0285-40bc-89c6-76e44452045d"
+  },
+  {
+    "question": "What sum will 45000 amount to in 4 years at 8% per annum compound interest?",
+    "options": {
+      "A": "36733.2 currency",
+      "B": "73466.4 currency",
+      "C": "61222.0 currency",
+      "D": "48977.6 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_AMOUNT",
+    "id": "bd0281d4-dab7-45e0-abf1-e4424ae7c7bb"
+  },
+  {
+    "question": "On a sum of 24000, the difference between CI and SI for 2 years at 12% is what amount?",
+    "options": {
+      "A": "345.6 currency",
+      "B": "276.48 currency",
+      "C": "414.72 currency",
+      "D": "483.84 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "11e0def9-e2c1-451e-8888-87ff5b0d267c"
+  },
+  {
+    "question": "Calculate CI if 16000 is invested at 16% half-yearly for 2 years.",
+    "options": {
+      "A": "6921.38 currency",
+      "B": "5767.82 currency",
+      "C": "8074.95 currency",
+      "D": "3460.69 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "3bcea553-0f27-4963-96a7-a8bd68238666"
+  },
+  {
+    "question": "What is the compound interest on 40000 invested at 8% for 3 years?",
+    "options": {
+      "A": "6233.09 currency",
+      "B": "12466.18 currency",
+      "C": "10388.48 currency",
+      "D": "8310.78 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_BASIC",
+    "id": "f4971f98-ee8c-47ec-b426-1013a928ac75"
+  },
+  {
+    "question": "What sum will 20000 amount to in 3 years at 12% per annum compound interest?",
+    "options": {
+      "A": "39337.98 currency",
+      "B": "28098.56 currency",
+      "C": "16859.14 currency",
+      "D": "33718.27 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_AMOUNT",
+    "id": "80bd22be-eefd-48ea-881e-f715c75d9775"
+  },
+  {
+    "question": "Calculate CI − SI for a sum of 8000 at 15% after 3 years.",
+    "options": {
+      "A": "340.2 currency",
+      "B": "567.0 currency",
+      "C": "793.8 currency",
+      "D": "680.4 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "2cbb9e21-73bd-463e-a21e-ec7f70d97b4e"
+  },
+  {
+    "question": "Find the compound interest on 16000 at 4% per annum for 3 years.",
+    "options": {
+      "A": "2796.95 currency",
+      "B": "1997.82 currency",
+      "C": "2397.38 currency",
+      "D": "1598.26 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_BASIC",
+    "id": "65c60a27-cf54-4eec-bb38-e4cfd4a74665"
+  },
+  {
+    "question": "What is the compound interest on 32000 compounded half-yearly at 16% for 1.5 years?",
+    "options": {
+      "A": "8310.78 currency",
+      "B": "4986.47 currency",
+      "C": "11635.09 currency",
+      "D": "6648.62 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "6ea0c073-0167-4112-9d25-d2fc67609d52"
+  },
+  {
+    "question": "Find the CI on 50000 for 2 years at 16% p.a., interest being compounded semi-annually.",
+    "options": {
+      "A": "25234.23 currency",
+      "B": "18024.45 currency",
+      "C": "14419.56 currency",
+      "D": "21629.34 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "47b5f2aa-b9f9-4d36-823c-729e53d12b1a"
+  },
+  {
+    "question": "What is the difference between CI and SI on 15000 for 2 years at 6%?",
+    "options": {
+      "A": "43.2 currency",
+      "B": "75.6 currency",
+      "C": "32.4 currency",
+      "D": "54.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "4e3713ce-3002-41b1-abb7-1428133b0b16"
+  },
+  {
+    "question": "Find the CI on 32000 for 2 years at 12% p.a., interest being compounded semi-annually.",
+    "options": {
+      "A": "8399.26 currency",
+      "B": "6719.41 currency",
+      "C": "10079.11 currency",
+      "D": "11758.96 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "72ff2745-ca7d-4fff-b713-19dc0deb2fd4"
+  },
+  {
+    "question": "What sum will 20000 amount to in 4 years at 5% per annum compound interest?",
+    "options": {
+      "A": "14586.08 currency",
+      "B": "29172.16 currency",
+      "C": "24310.13 currency",
+      "D": "19448.1 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_AMOUNT",
+    "id": "6ef98271-15a2-491b-872e-dadd9682d378"
+  },
+  {
+    "question": "A man invests 25000 in a bank at 15% p.a. compound interest. How much interest will he earn in 3 years?",
+    "options": {
+      "A": "7813.12 currency",
+      "B": "10417.5 currency",
+      "C": "13021.87 currency",
+      "D": "15626.24 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_BASIC",
+    "id": "9b14b7d6-af1c-4fa3-a842-98f06e64402a"
+  },
+  {
+    "question": "Calculate CI − SI for a sum of 12000 at 15% after 3 years.",
+    "options": {
+      "A": "1020.6 currency",
+      "B": "680.4 currency",
+      "C": "510.3 currency",
+      "D": "850.5 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "b1f51ea7-8a25-4449-9ff4-6b4cd23d61bd"
+  },
+  {
+    "question": "Calculate CI if 50000 is invested at 12% half-yearly for 2 years.",
+    "options": {
+      "A": "10499.08 currency",
+      "B": "7874.31 currency",
+      "C": "13123.85 currency",
+      "D": "15748.62 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "ba132571-637c-462e-b59c-df38000d80e8"
+  },
+  {
+    "question": "Find the compound interest on 40000 at 15% per annum for 3 years.",
+    "options": {
+      "A": "29169.0 currency",
+      "B": "16668.0 currency",
+      "C": "20835.0 currency",
+      "D": "25002.0 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_BASIC",
+    "id": "2df89ae5-6150-4e6c-a2d8-2c089148323c"
+  },
+  {
+    "question": "Find the amount after 3 years if 45000 is invested at 12% compounded annually.",
+    "options": {
+      "A": "63221.76 currency",
+      "B": "37933.06 currency",
+      "C": "50577.41 currency",
+      "D": "75866.11 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "medium",
+    "concept_id": "CI_AMOUNT",
+    "id": "a9579dfd-afb2-42fd-81e4-5a9822f2d62a"
+  },
+  {
+    "question": "Calculate the total amount after compounding 150000 for 6 years at 20%.",
+    "options": {
+      "A": "268738.56 currency",
+      "B": "447897.6 currency",
+      "C": "537477.12 currency",
+      "D": "627056.64 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_AMOUNT",
+    "id": "45e58820-92b5-4f6b-ba68-714b63670074"
+  },
+  {
+    "question": "A man invests 64000 in a bank at 18% p.a. compound interest. How much interest will he earn in 4 years?",
+    "options": {
+      "A": "36049.07 currency",
+      "B": "60081.78 currency",
+      "C": "48065.42 currency",
+      "D": "72098.14 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_BASIC",
+    "id": "15b1178f-371a-4dee-9d9d-7a1b658c17a2"
+  },
+  {
+    "question": "Determine the compound interest earned on 64000 at 15% per annum for 3 years, if compounding is done half-yearly.",
+    "options": {
+      "A": "20862.78 currency",
+      "B": "34771.3 currency",
+      "C": "41725.56 currency",
+      "D": "27817.04 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "8edbb313-c25e-44d4-93dc-861b2d7073e0"
+  },
+  {
+    "question": "Calculate CI − SI for a sum of 25000 at 14% after 3 years.",
+    "options": {
+      "A": "1846.32 currency",
+      "B": "2154.04 currency",
+      "C": "1538.6 currency",
+      "D": "923.16 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "268d43f7-d0f5-4e4c-a424-1f9148946b0c"
+  },
+  {
+    "question": "On a sum of 50000, the difference between CI and SI for 3 years at 14% is what amount?",
+    "options": {
+      "A": "3077.2 currency",
+      "B": "2461.76 currency",
+      "C": "3692.64 currency",
+      "D": "4308.08 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using ci_si_difference",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_SI_DIFFERENCE",
+    "id": "180f18ce-fecb-461b-a84b-7e05a6cbda62"
+  },
+  {
+    "question": "Find the CI earned on a deposit of 128000 if the rate of interest is 18% and the duration is 5 years.",
+    "options": {
+      "A": "131866.39 currency",
+      "B": "230766.19 currency",
+      "C": "164832.99 currency",
+      "D": "98899.79 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using compound_interest",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_BASIC",
+    "id": "41eaea40-2e40-4878-804f-4463ff132c5b"
+  },
+  {
+    "question": "How much interest will be credited to an account with 64000 at 18% compounded every six months for 3 years?",
+    "options": {
+      "A": "43334.41 currency",
+      "B": "26000.65 currency",
+      "C": "52001.29 currency",
+      "D": "34667.53 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using compound_interest_half_yearly",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_HALF_YEARLY",
+    "id": "3bed0115-e736-4684-918a-5b1897b6956a"
+  },
+  {
+    "question": "A person saves 75000 in a scheme that offers 20% CI annually. What is the total sum accumulated after 5 years?",
+    "options": {
+      "A": "149299.2 currency",
+      "B": "261273.6 currency",
+      "C": "223948.8 currency",
+      "D": "186624.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using compound_amount",
+    "category": "compound interest",
+    "difficulty": "hard",
+    "concept_id": "CI_AMOUNT",
+    "id": "310050e7-e5a5-4915-8bd5-604cb24c4760"
+  }
+]

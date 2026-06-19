@@ -1,0 +1,227 @@
+[
+  {
+    "question": "A shopkeeper sells a toy for 440 and earns a profit of 10%. What was the cost price of the toy?",
+    "options": {
+      "A": "560.0 currency",
+      "B": "240.0 currency",
+      "C": "480.0 currency",
+      "D": "400.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "5400fac7-54fb-4eb8-b422-01c93d07537f"
+  },
+  {
+    "question": "A shopkeeper sells a bicycle for 110 and gains a profit of 10%. What was the original cost price of the bicycle?",
+    "options": {
+      "A": "80.0 currency",
+      "B": "100.0 currency",
+      "C": "140.0 currency",
+      "D": "60.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "dd28db73-57a4-4775-b573-bde550b86110"
+  },
+  {
+    "question": "A retailer sells a batch of handmade candles for 690, earning a profit of 30%. Determine the original cost price of the candles.",
+    "options": {
+      "A": "318.46 currency",
+      "B": "424.62 currency",
+      "C": "636.92 currency",
+      "D": "530.77 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "medium",
+    "concept_id": "PL_COST_PRICE",
+    "id": "d6a25851-0acd-43f1-b440-4b9da4c01d1f"
+  },
+  {
+    "question": "A retailer marks up a batch of seasonal merchandise by 22.5% and sells it for 5600. Determine the original purchase cost of the batch.",
+    "options": {
+      "A": "4571.43 currency",
+      "B": "3657.14 currency",
+      "C": "5485.72 currency",
+      "D": "6400.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "hard",
+    "concept_id": "PL_COST_PRICE",
+    "id": "1c568b1b-a81a-4390-8eae-32ba797d176c"
+  },
+  {
+    "question": "A retailer sells a defective appliance for ₹5600 and realizes a profit of 37.5%. What was the retailer’s original purchase price for the appliance?",
+    "options": {
+      "A": "5701.82 currency",
+      "B": "4072.73 currency",
+      "C": "3258.18 currency",
+      "D": "2443.64 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "hard",
+    "concept_id": "PL_COST_PRICE",
+    "id": "c70fb615-74da-4680-ae4f-22ebff3e5f9d"
+  },
+  {
+    "question": "A retailer marks up a product by 12.5% and sells it for 12800 during a clearance sale. Determine the original purchase price of the product.",
+    "options": {
+      "A": "6826.67 currency",
+      "B": "13653.34 currency",
+      "C": "11377.78 currency",
+      "D": "15928.89 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "hard",
+    "concept_id": "PL_COST_PRICE",
+    "id": "24a5d675-7a0c-4f68-b53f-073cc2dfc4a0"
+  },
+  {
+    "question": "A smartphone was sold for 2400 at a gain of 22.5%. Determine the price at which the retailer bought it.",
+    "options": {
+      "A": "1959.18 currency",
+      "B": "1567.34 currency",
+      "C": "2351.02 currency",
+      "D": "2742.85 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "hard",
+    "concept_id": "PL_COST_PRICE",
+    "id": "99f1d017-be7a-4143-b1a3-96d6b296461a"
+  },
+  {
+    "question": "A smartphone was sold for 2400 at a gain of 18%. Determine the price at which the retailer bought it.",
+    "options": {
+      "A": "1220.34 currency",
+      "B": "2440.68 currency",
+      "C": "1627.12 currency",
+      "D": "2033.9 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "hard",
+    "concept_id": "PL_COST_PRICE",
+    "id": "81a4d65d-a3b5-46fd-ab64-8157272770f2"
+  },
+  {
+    "question": "A trader earns a profit of 10% by selling an item for 220. What was the cost price?",
+    "options": {
+      "A": "240.0 currency",
+      "B": "200.0 currency",
+      "C": "120.0 currency",
+      "D": "160.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "7ac6d17e-5c10-4fa8-9d4f-f9fe676f49b0"
+  },
+  {
+    "question": "A trader earns a profit of 10% by selling an item for 440. What was the cost price?",
+    "options": {
+      "A": "400.0 currency",
+      "B": "480.0 currency",
+      "C": "240.0 currency",
+      "D": "560.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "a51bf13c-1ae5-49e1-9ccf-8777f63f69f6"
+  },
+  {
+    "question": "A trader earns a profit of 20% by selling an item for 440. What was the cost price?",
+    "options": {
+      "A": "366.67 currency",
+      "B": "220.0 currency",
+      "C": "513.34 currency",
+      "D": "440.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "7b1c5883-2179-4b2c-a52c-233bebc12fea"
+  },
+  {
+    "question": "A trader earns a profit of 20% by selling an item for 110. What was the cost price?",
+    "options": {
+      "A": "110.0 currency",
+      "B": "91.67 currency",
+      "C": "128.34 currency",
+      "D": "73.34 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "636bc6f6-40cb-48df-906e-c3139a254cde"
+  },
+  {
+    "question": "An article is sold for 220 at a profit of 10%. Find the cost price.",
+    "options": {
+      "A": "160.0 currency",
+      "B": "200.0 currency",
+      "C": "120.0 currency",
+      "D": "240.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "6b381e4e-aec4-492a-9cde-e3b746f9750d"
+  },
+  {
+    "question": "An article is sold for 110 at a profit of 20%. Find the cost price.",
+    "options": {
+      "A": "110.0 currency",
+      "B": "73.34 currency",
+      "C": "128.34 currency",
+      "D": "91.67 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "d4bbe869-723c-423f-a6a6-8be4bcae6438"
+  },
+  {
+    "question": "An article is sold for 220 at a profit of 20%. Find the cost price.",
+    "options": {
+      "A": "256.66 currency",
+      "B": "183.33 currency",
+      "C": "220.0 currency",
+      "D": "146.66 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using cost_price_from_sp_profit",
+    "category": "profit and loss",
+    "difficulty": "easy",
+    "concept_id": "PL_COST_PRICE",
+    "id": "81fbb2c2-77b6-482b-9d6d-71e77e560c68"
+  }
+]

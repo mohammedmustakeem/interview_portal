@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: interview-service
+spec:
+  selector:
+    app: interview-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 10000
+  type: ClusterIP

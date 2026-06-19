@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HR Round — Test UI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #a78bfa;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    .badge {
+      background: #1e1e2e;
+      border: 1px solid #a78bfa44;
+      color: #a78bfa;
+      font-size: 0.7rem;
+      padding: 2px 10px;
+      border-radius: 99px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      padding: 24px;
+      width: 100%;
+      max-width: 680px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #7c7ca0;
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      color: #9090b0;
+      margin-bottom: 4px;
+      margin-top: 12px;
+    }
+
+    input[type="text"], select, input[type="file"] {
+      width: 100%;
+      padding: 10px 12px;
+      background: #0f0f1e;
+      border: 1px solid #2a2a4a;
+      border-radius: 8px;
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    input[type="text"]:focus, select:focus {
+      border-color: #a78bfa;
+    }
+
+    .url-row {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+    }
+
+    .url-row input { flex: 1; }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #a78bfa;
+      color: #0f0f0f;
+      width: 100%;
+      margin-top: 16px;
+      padding: 12px;
+    }
+
+    .btn-primary:hover { background: #c4b5fd; }
+    .btn-primary:disabled { background: #3a3a5a; color: #666; cursor: not-allowed; }
+
+    .btn-sm {
+      background: #2a2a4a;
+      color: #e0e0e0;
+      font-size: 0.8rem;
+      padding: 8px 14px;
+    }
+
+    .btn-sm:hover { background: #3a3a6a; }
+
+    .btn-danger {
+      background: #4a1a2a;
+      color: #f87171;
+      font-size: 0.8rem;
+      padding: 8px 14px;
+    }
+
+    .btn-danger:hover { background: #6a2a3a; }
+
+    /* Status pill */
+    #status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 99px;
+      background: #1a1a2e;
+      border: 1px solid #2a2a4a;
+      margin-bottom: 16px;
+    }
+
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #555;
+    }
+
+    .dot.green { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
+    .dot.yellow { background: #facc15; box-shadow: 0 0 6px #facc15; }
+    .dot.red { background: #f87171; box-shadow: 0 0 6px #f87171; }
+
+    /* Chat log */
+    #chat-log {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-height: 380px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .msg {
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      max-width: 85%;
+    }
+
+    .msg.ai {
+      background: #1e1e3a;
+      border: 1px solid #3a3a6a;
+      align-self: flex-start;
+      color: #c4b5fd;
+    }
+
+    .msg.user {
+      background: #1a2e1a;
+      border: 1px solid #2a4a2a;
+      align-self: flex-end;
+      color: #86efac;
+    }
+
+    .msg.system {
+      background: #2e1a1a;
+      border: 1px solid #4a2a2a;
+      align-self: center;
+      color: #fca5a5;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    .msg .sender {
+      font-size: 0.7rem;
+      opacity: 0.6;
+      margin-bottom: 4px;
+    }
+
+    /* Answer area */
+    .answer-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    #answer-input {
+      flex: 1;
+      padding: 10px 12px;
+      background: #0f0f1e;
+      border: 1px solid #2a2a4a;
+      border-radius: 8px;
+      color: #e0e0e0;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    #answer-input:focus { border-color: #a78bfa; }
+
+    /* Session info */
+    .session-info {
+      font-size: 0.75rem;
+      color: #555;
+      margin-top: 8px;
+      font-family: monospace;
+    }
+
+    .hidden { display: none !important; }
+
+    /* Raw log */
+    #raw-log {
+      background: #050510;
+      border: 1px solid #1a1a2e;
+      border-radius: 8px;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 0.72rem;
+      color: #4a4a6a;
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 8px;
+    }
+
+    #raw-log .log-entry { margin-bottom: 4px; }
+    #raw-log .log-entry.in { color: #6a8aaa; }
+    #raw-log .log-entry.out { color: #6aaa7a; }
+    #raw-log .log-entry.err { color: #aa6a6a; }
+  </style>
+</head>
+<body>
+
+<h1>🎙 HR Round</h1>
+<div class="badge">SyncLyft · Interview Engine · Test UI</div>
+
+<!-- Config Card -->
+<div class="card" id="config-card">
+  <h2>⚙ Backend Config</h2>
+  <div class="url-row">
+    <div style="flex:1">
+      <label>Backend URL</label>
+      <input type="text" id="base-url" value="http://localhost:10000" placeholder="https://your-app.onrender.com" />
+    </div>
+    <button class="btn-sm" onclick="pingHealth()">Ping</button>
+  </div>
+  <div id="ping-result" style="font-size:0.75rem; margin-top:6px; color:#7c7ca0;"></div>
+
+  <h2 style="margin-top:20px">👤 Candidate Info</h2>
+
+  <label>Role</label>
+  <input type="text" id="role" value="Software Engineer" />
+
+  <label>Experience</label>
+  <input type="text" id="experience" value="2 years" />
+
+  <label>Resume (optional PDF)</label>
+  <input type="file" id="resume" accept=".pdf,.doc,.docx" />
+
+  <button class="btn-primary" onclick="startHR()" id="start-btn">Start HR Interview</button>
+</div>
+
+<!-- Interview Card -->
+<div class="card hidden" id="interview-card">
+  <h2>💬 Interview</h2>
+
+  <div id="status-pill">
+    <div class="dot yellow" id="status-dot"></div>
+    <span id="status-text">Connecting...</span>
+  </div>
+
+  <div id="chat-log"></div>
+
+  <div class="answer-row">
+    <input type="text" id="answer-input" placeholder="Type your answer here..." onkeydown="if(event.key==='Enter') sendAnswer()" />
+    <button class="btn-sm" onclick="sendAnswer()">Send ▶</button>
+    <button class="btn-danger" onclick="endInterview()">End</button>
+  </div>
+
+  <div class="session-info" id="session-info"></div>
+</div>
+
+<!-- Raw Log -->
+<div class="card">
+  <h2 style="display:flex; justify-content:space-between; align-items:center;">
+    📡 Raw API Log
+    <button class="btn-sm" onclick="clearLog()">Clear</button>
+  </h2>
+  <div id="raw-log"></div>
+</div>
+
+<script>
+  let sessionId = null;
+  let ws = null;
+  let baseUrl = '';
+
+  // ── helpers ─────────────────────────────────────────────────────────────
+  function rawLog(text, type='in') {
+    const el = document.getElementById('raw-log');
+    const entry = document.createElement('div');
+    entry.className = `log-entry ${type}`;
+    entry.textContent = `[${new Date().toLocaleTimeString()}] ${text}`;
+    el.appendChild(entry);
+    el.scrollTop = el.scrollHeight;
+  }
+
+  function clearLog() { document.getElementById('raw-log').innerHTML = ''; }
+
+  function addMsg(text, who='ai') {
+    const log = document.getElementById('chat-log');
+    const wrap = document.createElement('div');
+    wrap.className = `msg ${who}`;
+    const sender = document.createElement('div');
+    sender.className = 'sender';
+    sender.textContent = who === 'ai' ? '🤖 Interviewer' : who === 'user' ? '🧑 You' : '⚠ System';
+    wrap.appendChild(sender);
+    wrap.appendChild(document.createTextNode(text));
+    log.appendChild(wrap);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function setStatus(state, text) {
+    const dot = document.getElementById('status-dot');
+    dot.className = 'dot ' + state;
+    document.getElementById('status-text').textContent = text;
+  }
+
+  // ── ping ─────────────────────────────────────────────────────────────────
+  async function pingHealth() {
+    const url = document.getElementById('base-url').value.trim();
+    const el = document.getElementById('ping-result');
+    el.textContent = 'Pinging...';
+    try {
+      const r = await fetch(`${url}/health`);
+      const d = await r.json();
+      el.textContent = `✅ ${JSON.stringify(d)}`;
+      el.style.color = '#4ade80';
+      rawLog(`GET ${url}/health → ${JSON.stringify(d)}`, 'in');
+    } catch(e) {
+      el.textContent = `❌ ${e.message}`;
+      el.style.color = '#f87171';
+      rawLog(`Ping failed: ${e.message}`, 'err');
+    }
+  }
+
+  // ── start HR ──────────────────────────────────────────────────────────────
+  async function startHR() {
+    baseUrl = document.getElementById('base-url').value.trim();
+    const role = document.getElementById('role').value.trim();
+    const experience = document.getElementById('experience').value.trim();
+    const resumeFile = document.getElementById('resume').files[0];
+
+    if (!role || !experience) { alert('Role and experience required!'); return; }
+
+    document.getElementById('start-btn').disabled = true;
+    rawLog(`POST ${baseUrl}/hr/start  role="${role}" experience="${experience}"`, 'out');
+
+    const form = new FormData();
+    form.append('role', role);
+    form.append('experience', experience);
+    if (resumeFile) form.append('resume', resumeFile);
+
+    try {
+      const r = await fetch(`${baseUrl}/hr/start`, { method: 'POST', body: form });
+      const d = await r.json();
+      rawLog(`Response: ${JSON.stringify(d)}`, 'in');
+
+      if (!r.ok) { addMsg(`Error: ${d.detail || JSON.stringify(d)}`, 'system'); return; }
+
+      sessionId = d.session_id;
+
+      // Show interview card
+      document.getElementById('config-card').classList.add('hidden');
+      document.getElementById('interview-card').classList.remove('hidden');
+      document.getElementById('session-info').textContent = `Session ID: ${sessionId}`;
+
+      // Show first question
+      const q = d.first_question;
+      if (typeof q === 'string') addMsg(q, 'ai');
+      else if (q && q.question) addMsg(q.question, 'ai');
+      else addMsg(JSON.stringify(q), 'ai');
+
+      // Connect WebSocket
+      connectWS();
+
+    } catch(e) {
+      rawLog(`Error: ${e.message}`, 'err');
+      addMsg(`Failed to start: ${e.message}`, 'system');
+      document.getElementById('start-btn').disabled = false;
+    }
+  }
+
+  // ── websocket ─────────────────────────────────────────────────────────────
+  function connectWS() {
+    const wsUrl = baseUrl.replace(/^http/, 'ws') + `/interview/ws/${sessionId}`;
+    rawLog(`WS connect → ${wsUrl}`, 'out');
+    setStatus('yellow', 'Connecting WebSocket...');
+
+    ws = new WebSocket(wsUrl);
+
+    ws.onopen = () => {
+      setStatus('green', 'Connected · Live');
+      rawLog('WebSocket connected ✓', 'in');
+    };
+
+    ws.onmessage = (e) => {
+      rawLog(`WS ← ${e.data}`, 'in');
+      try {
+        const d = JSON.parse(e.data);
+        const msg = d.question || d.message || d.response || d.text || JSON.stringify(d);
+        addMsg(msg, 'ai');
+      } catch {
+        addMsg(e.data, 'ai');
+      }
+    };
+
+    ws.onerror = (e) => {
+      setStatus('red', 'WS Error');
+      rawLog('WebSocket error', 'err');
+    };
+
+    ws.onclose = () => {
+      setStatus('red', 'Disconnected');
+      rawLog('WebSocket closed', 'err');
+    };
+  }
+
+  // ── send answer ───────────────────────────────────────────────────────────
+  function sendAnswer() {
+    const input = document.getElementById('answer-input');
+    const answer = input.value.trim();
+    if (!answer) return;
+
+    addMsg(answer, 'user');
+    input.value = '';
+
+    if (ws && ws.readyState === WebSocket.OPEN) {
+      const payload = {
+        type: "USER_FINISHED_SPEAKING",
+        payload: { answer }
+      };
+      ws.send(JSON.stringify(payload));
+      rawLog(`WS → ${JSON.stringify(payload)}`, 'out');
+    } else {
+      rawLog('WS not connected — trying HTTP fallback...', 'err');
+      // HTTP fallback if WS not available
+      httpAnswer(answer);
+    }
+  }
+
+  async function httpAnswer(answer) {
+    rawLog(`POST ${baseUrl}/hr/answer  (fallback)`, 'out');
+    try {
+      const r = await fetch(`${baseUrl}/hr/answer`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: sessionId, answer })
+      });
+      const d = await r.json();
+      rawLog(`Response: ${JSON.stringify(d)}`, 'in');
+      const msg = d.question || d.message || d.response || JSON.stringify(d);
+      addMsg(msg, 'ai');
+    } catch(e) {
+      rawLog(`HTTP fallback error: ${e.message}`, 'err');
+      addMsg(`Error sending answer: ${e.message}`, 'system');
+    }
+  }
+
+  // ── end interview ──────────────────────────────────────────────────────────
+  async function endInterview() {
+    setStatus('yellow', 'Ending...');
+    rawLog(`POST ${baseUrl}/hr/end`, 'out');
+
+    if (ws) ws.close();
+
+    try {
+      const r = await fetch(`${baseUrl}/hr/end`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: sessionId })
+      });
+      const d = await r.json();
+      rawLog(`End response: ${JSON.stringify(d)}`, 'in');
+      addMsg(`Interview ended. ${d.message || d.summary || ''}`, 'system');
+      setStatus('red', 'Ended');
+    } catch(e) {
+      rawLog(`End error: ${e.message}`, 'err');
+      addMsg('Interview ended.', 'system');
+      setStatus('red', 'Ended');
+    }
+  }
+</script>
+</body>
+</html>

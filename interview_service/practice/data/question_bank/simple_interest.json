@@ -1,0 +1,681 @@
+[
+  {
+    "question": "Calculate the total interest earned when a savings account with an initial deposit of 800 grows at an annual rate of 5% for 2 years.",
+    "options": {
+      "A": "80.0 currency",
+      "B": "48.0 currency",
+      "C": "64.0 currency",
+      "D": "96.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_INTEREST",
+    "id": "0f7e6165-a10d-44ab-aa41-d7f8669da8b1"
+  },
+  {
+    "question": "A farmer invests 1000 in a savings scheme offering 5% simple interest per annum. What is the difference in the total amount he will receive after 1 years compared to after 2 years?",
+    "options": {
+      "A": "70.0 currency",
+      "B": "40.0 currency",
+      "C": "60.0 currency",
+      "D": "50.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "id": "5f576f9d-0144-49d7-98b2-f86106f723fb"
+  },
+  {
+    "question": "A farmer borrowed an amount at a simple interest rate of 10% per annum and repaid 200 in interest after 2 years. What was the original amount borrowed?",
+    "options": {
+      "A": "1400.0 currency",
+      "B": "800.0 currency",
+      "C": "600.0 currency",
+      "D": "1000.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "054b05ec-eb45-4133-a844-58d1ea5e076e"
+  },
+  {
+    "question": "How many years will it take for a savings account with an initial deposit of 1000 to earn a total interest of 200 at an annual simple interest rate of 10%?",
+    "options": {
+      "A": "1.2 years",
+      "B": "2.4 years",
+      "C": "2.0 years",
+      "D": "2.8 years"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_TIME",
+    "id": "22873cf9-1931-494d-8fbe-5fa79ec4a0fd"
+  },
+  {
+    "question": "A farmer borrows 1000 to buy seeds and agrees to pay back 50 as extra after 1 years. What annual interest rate is he being charged?",
+    "options": {
+      "A": "4.0 percentage",
+      "B": "5.0 percentage",
+      "C": "3.0 percentage",
+      "D": "6.0 percentage"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_RATE",
+    "id": "191726c3-a9d6-4cbe-84dc-3dab3bd0977f"
+  },
+  {
+    "question": "A farmer invests 1000 in a savings scheme for 1 years that offers 10% simple interest per annum. What will be the total amount he receives at the end of the period?",
+    "options": {
+      "A": "660.0 currency",
+      "B": "1100.0 currency",
+      "C": "880.0 currency",
+      "D": "1320.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_AMOUNT",
+    "id": "c46c8fc2-5cdd-49b5-989a-0f20273d973c"
+  },
+  {
+    "question": "A farmer invests 7200 in a savings scheme that offers a simple interest rate of 6.25% per year; what will the total amount in the account be after 2.5 years?",
+    "options": {
+      "A": "6660.0 currency",
+      "B": "8325.0 currency",
+      "C": "9990.0 currency",
+      "D": "4995.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_AMOUNT",
+    "id": "d553621b-a457-4aef-9a61-93e6128331b1"
+  },
+  {
+    "question": "A farmer invests 2400 in a new irrigation system and earns a profit of 540 after 4 years. Determine the annual interest rate applied to this investment.",
+    "options": {
+      "A": "6.74 percentage",
+      "B": "5.62 percentage",
+      "C": "3.37 percentage",
+      "D": "4.5 percentage"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_RATE",
+    "id": "9c7d9a71-6476-4724-a57a-b5c6b5f9b224"
+  },
+  {
+    "question": "If a savings account with an initial deposit of 2400 earns 600 in interest at an annual rate of 15%, how many years must the money remain in the account?",
+    "options": {
+      "A": "1.0 years",
+      "B": "2.34 years",
+      "C": "2.0 years",
+      "D": "1.67 years"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_TIME",
+    "id": "9d628728-a458-4f96-ba2f-08bdd2cf261b"
+  },
+  {
+    "question": "A farmer borrowed money to buy new equipment and after 3 years, he paid an additional 450 as simple interest at a rate of 12% per annum. What was the initial amount he borrowed?",
+    "options": {
+      "A": "1000.0 currency",
+      "B": "1500.0 currency",
+      "C": "1250.0 currency",
+      "D": "1750.0 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "1e6034ce-74dd-4ae2-8291-1837732792ea"
+  },
+  {
+    "question": "A farmer invests 5400 in a savings scheme for 4 years at a simple interest rate of 7.5% per annum. How much interest will the farmer earn at the end of the period?",
+    "options": {
+      "A": "1296.0 currency",
+      "B": "1620.0 currency",
+      "C": "2268.0 currency",
+      "D": "972.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_INTEREST",
+    "id": "a03f941a-2853-42e0-a411-6fc4cd47afce"
+  },
+  {
+    "question": "A farmer invests 4800 in a savings scheme offering 12% simple interest annually. What is the difference in the total amount he will receive after 2 years compared to after 4 years?",
+    "options": {
+      "A": "1612.8 currency",
+      "B": "691.2 currency",
+      "C": "1152.0 currency",
+      "D": "921.6 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "id": "6d4096f5-d65e-472b-bb3e-cf93d97a1555"
+  },
+  {
+    "question": "A small business owner takes a loan of amount 8000 and agrees to repay a total interest of 2400 over 6 years. What is the annual simple interest rate being charged on this loan?",
+    "options": {
+      "A": "5.0 percentage",
+      "B": "6.0 percentage",
+      "C": "4.0 percentage",
+      "D": "3.0 percentage"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_RATE",
+    "id": "601fe987-bbb8-44cb-a656-c693035965ca"
+  },
+  {
+    "question": "A small business owner took a short-term loan and repaid a total of 1250 in interest charges after 5 years at an annual rate of 20%. What was the original loan amount?",
+    "options": {
+      "A": "1250.0 currency",
+      "B": "1500.0 currency",
+      "C": "1000.0 currency",
+      "D": "1750.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "87d40ffd-77c4-4343-a862-7d26a9a437ad"
+  },
+  {
+    "question": "A farmer invests 12000 in a crop development project that yields a simple interest rate of 15% per annum. Determine the additional earnings generated when the investment period is extended from 3 years to 6 years.",
+    "options": {
+      "A": "6480.0 currency",
+      "B": "7560.0 currency",
+      "C": "3240.0 currency",
+      "D": "5400.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "id": "0213d9f4-7552-45c4-83bc-90da6df56f36"
+  },
+  {
+    "question": "A small business owner takes out a loan of 9800 to purchase new equipment, agreeing to repay it with simple interest at a rate of 14.4% per annum over 6 years. What is the total interest the business will pay on this loan?",
+    "options": {
+      "A": "6773.76 currency",
+      "B": "5080.32 currency",
+      "C": "8467.2 currency",
+      "D": "11854.08 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_INTEREST",
+    "id": "4c774710-4b6b-424d-b228-b7eb26b2d039"
+  },
+  {
+    "question": "A startup invests 12000 in a new project and earns a simple interest of 2400 at an annual rate of 18%. Determine the duration for which the funds were invested.",
+    "options": {
+      "A": "0.89 years",
+      "B": "1.11 years",
+      "C": "1.55 years",
+      "D": "0.67 years"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_TIME",
+    "id": "77db32b4-4bbc-4578-8851-62f29fab7c83"
+  },
+  {
+    "question": "If a business takes a short-term loan of 18600 at an annual simple interest rate of 16.67%, what will be the total repayment amount after 4 years?",
+    "options": {
+      "A": "18601.49 currency",
+      "B": "37202.98 currency",
+      "C": "43403.47 currency",
+      "D": "31002.48 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT",
+    "id": "e89da520-8671-44c5-9571-5a3643a3d03d"
+  },
+  {
+    "question": "Calculate the final amount when 18600 earns simple interest at 13.5% per annum for 4 years.",
+    "options": {
+      "A": "28644.0 currency",
+      "B": "22915.2 currency",
+      "C": "34372.8 currency",
+      "D": "17186.4 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT",
+    "id": "ac4823f7-3d52-40d7-af20-416aaeb6100e"
+  },
+  {
+    "question": "What interest will be earned on 14500 in 6 years at 14.4% SI?",
+    "options": {
+      "A": "12528.0 currency",
+      "B": "7516.8 currency",
+      "C": "15033.6 currency",
+      "D": "17539.2 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_INTEREST",
+    "id": "2eae3920-5f93-4d44-9971-e7e9c7445b70"
+  },
+  {
+    "question": "What was the original sum if 1800 is earned at 16.67% SI in 5 years?",
+    "options": {
+      "A": "1727.66 currency",
+      "B": "2159.57 currency",
+      "C": "3023.4 currency",
+      "D": "2591.48 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "f1596142-7618-4df0-a6e7-4147ecbed0e5"
+  },
+  {
+    "question": "How many years will it take for 8000 to earn 2400 at 18%?",
+    "options": {
+      "A": "1.0 years",
+      "B": "2.0 years",
+      "C": "2.34 years",
+      "D": "1.67 years"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_TIME",
+    "id": "2a7bf642-6969-4fec-b82b-682390b142d6"
+  },
+  {
+    "question": "Calculate the increase in amount from 3 years to 6 years at 15% SI on 12000.",
+    "options": {
+      "A": "7560.0 currency",
+      "B": "3240.0 currency",
+      "C": "5400.0 currency",
+      "D": "6480.0 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "id": "14ad0aa2-9e0d-44fa-912b-397f02f05064"
+  },
+  {
+    "question": "What is the annual rate if simple interest is 2400 on 8000 for 6 years?",
+    "options": {
+      "A": "6.0 percentage",
+      "B": "5.0 percentage",
+      "C": "4.0 percentage",
+      "D": "3.0 percentage"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_RATE",
+    "id": "55ad6f30-6812-4241-a553-c6c770ded157"
+  },
+  {
+    "question": "If the simple interest is 1800 at 20% for 5 years, find the principal.",
+    "options": {
+      "A": "1800.0 currency",
+      "B": "1080.0 currency",
+      "C": "2160.0 currency",
+      "D": "1440.0 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "2cf9da82-e806-41e8-b81e-6ab49f06aacf"
+  },
+  {
+    "question": "Find the total amount after 4 years on a principal of 25000 at 13.5% simple interest.",
+    "options": {
+      "A": "53900.0 currency",
+      "B": "30800.0 currency",
+      "C": "46200.0 currency",
+      "D": "38500.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT",
+    "id": "104e21b7-d905-488d-861b-058245b39dc5"
+  },
+  {
+    "question": "What is the annual rate if simple interest is 1600 on 12000 for 5 years?",
+    "options": {
+      "A": "2.14 percentage",
+      "B": "3.74 percentage",
+      "C": "1.6 percentage",
+      "D": "2.67 percentage"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_RATE",
+    "id": "b2bbab7b-c495-4dec-90f2-6300793cd413"
+  },
+  {
+    "question": "Find the difference between the amounts after 3 years and 6 years on 18000 at 15% SI.",
+    "options": {
+      "A": "6480.0 currency",
+      "B": "4860.0 currency",
+      "C": "9720.0 currency",
+      "D": "8100.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "id": "bc4627f5-23ba-436b-8eb8-a1480a82b305"
+  },
+  {
+    "question": "For what duration was 8000 invested to get interest 3600 at 20%?",
+    "options": {
+      "A": "3.15 years",
+      "B": "1.35 years",
+      "C": "2.25 years",
+      "D": "2.7 years"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_TIME",
+    "id": "f771d975-9e1c-4f12-89ad-678c36f92e2e"
+  },
+  {
+    "question": "Calculate the interest obtained if 14500 is invested at 18% for 6 years.",
+    "options": {
+      "A": "12528.0 currency",
+      "B": "15660.0 currency",
+      "C": "9396.0 currency",
+      "D": "21924.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_INTEREST",
+    "id": "f9246e1d-aaed-4159-b6e0-f0ebf4399727"
+  },
+  {
+    "question": "Determine the time if simple interest is 3600 on 12000 at 18%.",
+    "options": {
+      "A": "1.67 years",
+      "B": "1.0 years",
+      "C": "2.34 years",
+      "D": "2.0 years"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_TIME",
+    "id": "bfc5dc80-d976-4a8f-9523-6bcd4ec09da0"
+  },
+  {
+    "question": "What will be the amount if 12500 is invested for 5 years at 16.67% SI?",
+    "options": {
+      "A": "18335.0 currency",
+      "B": "22918.75 currency",
+      "C": "27502.5 currency",
+      "D": "32086.25 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_AMOUNT",
+    "id": "bf36e89f-986d-41de-897c-d6849128e135"
+  },
+  {
+    "question": "Find the rate of interest if 1600 is earned on 8000 in 6 years.",
+    "options": {
+      "A": "3.33 percentage",
+      "B": "2.0 percentage",
+      "C": "4.0 percentage",
+      "D": "2.66 percentage"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_RATE",
+    "id": "d4dd697f-789d-4cdc-abaf-db2912b2e720"
+  },
+  {
+    "question": "What was the original sum if 1250 is earned at 20% SI in 5 years?",
+    "options": {
+      "A": "1750.0 currency",
+      "B": "1250.0 currency",
+      "C": "1500.0 currency",
+      "D": "1000.0 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "b4b4585e-3d86-4871-9527-02d6a25500fd"
+  },
+  {
+    "question": "How much interest does 9800 earn at 18% SI in 6 years?",
+    "options": {
+      "A": "12700.8 currency",
+      "B": "10584.0 currency",
+      "C": "14817.6 currency",
+      "D": "8467.2 currency"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "hard",
+    "concept_id": "SI_INTEREST",
+    "id": "67076132-6720-4304-8ea3-555183070e10"
+  },
+  {
+    "question": "Find the difference between the amounts after 2 years and 4 years on 3600 at 12% SI.",
+    "options": {
+      "A": "1036.8 currency",
+      "B": "691.2 currency",
+      "C": "864.0 currency",
+      "D": "1209.6 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "id": "fed5de17-ac2b-48de-a236-7831ed78f872"
+  },
+  {
+    "question": "Find the rate of interest if 540 is earned on 2400 in 3 years.",
+    "options": {
+      "A": "4.5 percentage",
+      "B": "7.5 percentage",
+      "C": "9.0 percentage",
+      "D": "10.5 percentage"
+    },
+    "correct_option": "B",
+    "explanation": "Computed using rate_from_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_RATE",
+    "id": "f9ca8487-2e37-45d6-b0c9-08003fba945d"
+  },
+  {
+    "question": "What was the original sum if 450 is earned at 12% SI in 3 years?",
+    "options": {
+      "A": "1000.0 currency",
+      "B": "1750.0 currency",
+      "C": "1500.0 currency",
+      "D": "1250.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_PRINCIPAL",
+    "id": "05ac1a3b-12f3-4b7c-ae8f-e429b6979d47"
+  },
+  {
+    "question": "Find the total amount after 2.5 years on a principal of 3500 at 8% simple interest.",
+    "options": {
+      "A": "2520.0 currency",
+      "B": "5040.0 currency",
+      "C": "4200.0 currency",
+      "D": "3360.0 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using amount_simple_interest",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_AMOUNT",
+    "id": "eea4a95a-7f2c-4130-91d5-116433bcf4a4"
+  },
+  {
+    "question": "Find the time for which 3600 earns an interest of 900 at 15% SI.",
+    "options": {
+      "A": "1.67 years",
+      "B": "2.34 years",
+      "C": "2.0 years",
+      "D": "1.0 years"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using time_from_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_TIME",
+    "id": "401770c9-6cea-4997-b94f-35c3245d6357"
+  },
+  {
+    "question": "Calculate the interest obtained if 3600 is invested at 12% for 3 years.",
+    "options": {
+      "A": "1296.0 currency",
+      "B": "1555.2 currency",
+      "C": "1036.8 currency",
+      "D": "777.6 currency"
+    },
+    "correct_option": "A",
+    "explanation": "Computed using simple_interest",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_INTEREST",
+    "id": "9c4f63c6-653d-4bbf-9288-442f5ce82bca"
+  },
+  {
+    "question": "Find the principal if the simple interest earned is 100 at 10% for 1 years.",
+    "options": {
+      "A": "600.0 currency",
+      "B": "1400.0 currency",
+      "C": "1000.0 currency",
+      "D": "800.0 currency"
+    },
+    "correct_option": "C",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_PRINCIPAL",
+    "params": {
+      "r": 10,
+      "si": 100,
+      "t": 1
+    },
+    "source": "session",
+    "id": "a7fb9094-aa60-4125-be4f-92ed86c24d84"
+  },
+  {
+    "question": "What was the original sum if 100 is earned at 10% SI in 2 years?",
+    "options": {
+      "A": "700.0 currency",
+      "B": "600.0 currency",
+      "C": "400.0 currency",
+      "D": "500.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using principal_from_si",
+    "category": "simple interest",
+    "difficulty": "easy",
+    "concept_id": "SI_PRINCIPAL",
+    "params": {
+      "r": 10,
+      "si": 100,
+      "t": 2
+    },
+    "source": "session",
+    "id": "f96c1c85-13bc-4b70-b4ff-187c5590874e"
+  },
+  {
+    "question": "Calculate the increase in amount from 2 years to 4 years at 12% SI on 3600.",
+    "options": {
+      "A": "1209.6 currency",
+      "B": "691.2 currency",
+      "C": "1036.8 currency",
+      "D": "864.0 currency"
+    },
+    "correct_option": "D",
+    "explanation": "Computed using amount_difference_si",
+    "category": "simple interest",
+    "difficulty": "medium",
+    "concept_id": "SI_AMOUNT_DIFF",
+    "params": {
+      "p": 3600,
+      "r": 12,
+      "t1": 2,
+      "t2": 4
+    },
+    "source": "session",
+    "id": "16001547-6045-4beb-9484-8b9188a297da"
+  }
+]

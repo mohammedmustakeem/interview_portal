@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SyncLyft - Tech Interview</title>
+<title>SyncLyft - Interview Platform</title>
+<script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.umd.min.js"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', sans-serif; background: #0f0f13; color: #e2e0d8; min-height: 100vh; position: relative; }
@@ -20,6 +21,7 @@
   .setup-card { background: #16161e; border: 1px solid #2e2e3e; border-radius: 16px; padding: 28px; margin-bottom: 24px; }
   .setup-card h2 { font-size: 16px; color: #aaa; margin-bottom: 20px; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .full-row { grid-column: span 3; margin-top: 4px; margin-bottom: 8px; }
   label { font-size: 12px; color: #666; display: block; margin-bottom: 6px; }
   input, select { width: 100%; padding: 10px 14px; background: #0f0f13; border: 1px solid #2e2e3e; border-radius: 8px; color: #fff; font-size: 14px; outline: none; }
   input:focus, select:focus { border-color: #6c47ff; }
@@ -46,6 +48,16 @@
 
   .msg-label { font-size: 11px; opacity: 0.6; margin-bottom: 4px; }
 
+  /* Aptitude MCQ Render Box Styling */
+  .aptitude-box { background: #111116; border: 1px solid #3a3a4c; border-radius: 10px; padding: 16px; margin-top: 10px; width: 100%; }
+  .aptitude-option { display: flex; align-items: center; gap: 10px; margin: 10px 0; padding: 10px; background: #16161e; border: 1px solid #2e2e3e; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+  .aptitude-option:hover { border-color: #6c47ff; background: #1e1e2a; }
+  .aptitude-option input[type="radio"] { accent-color: #6c47ff; width: 18px; height: 18px; cursor: pointer; }
+  .feedback-msg { margin-top: 12px; font-weight: 600; font-size: 13px; }
+  .feedback-msg.correct { color: #22c55e; }
+  .feedback-msg.wrong { color: #ef4444; }
+  .next-quiz-btn { margin-top: 12px; padding: 8px 16px; background: #6c47ff; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; float: right; }
+
   /* Audio controls */
   .audio-bar { background: #1a1a24; border-top: 1px solid #2e2e3e; padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
   .audio-status { font-size: 12px; color: #666; flex: 1; }
@@ -65,6 +77,7 @@
   .mic-btn { padding: 12px 18px; background: #2e2e3e; color: #fff; border: 1px solid #444; border-radius: 10px; font-size: 16px; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
   .mic-btn:hover { background: #3e3e5e; }
   .mic-btn.listening { background: #ef4444; color: #fff; border-color: #b91c1c; animation: pulseMic 1.5s infinite; }
+  @keyframes pulseMic { 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:0.8; transform:scale(1.05)} }
   .mic-btn:disabled { background: #333; color: #666; cursor: not-allowed; border-color: #222; }
 
   .hidden { display: none !important; }
@@ -76,13 +89,9 @@
   .camera-title { font-size: 13px; font-weight: 600; color: #aaa; }
   .proctor-status { font-size: 11px; font-family: monospace; }
   .proctor-status.ok { color: #22c55e; }
-  .proctor-status.warn { color: #f59e0b; }
-  .proctor-status.danger { color: #ef4444; }
   .camera-row { display: flex; gap: 16px; align-items: flex-start; }
   video { width: 200px; height: 150px; border-radius: 10px; border: 1px solid #2e2e3e; background: #000; transform: scaleX(-1); }
   .warnings-box { flex: 1; background: #0f0f13; border-radius: 10px; padding: 12px; min-height: 100px; font-size: 12px; font-family: monospace; }
-  .warning-item { color: #f59e0b; padding: 2px 0; }
-  .warning-item.danger { color: #ef4444; }
   .warning-ok { color: #22c55e; }
 
   /* Resume Overlay */
@@ -120,7 +129,31 @@
   <div class="setup-card" id="setupCard">
     <h2>Interview Setup</h2>
     <div class="form-row">
-      <div>
+      <div class="full-row">
+        <label>Interview Type</label>
+        <select id="interviewType" onchange="handleInterviewTypeChange()">
+          <option value="tech_round" selected>Technical Interview</option>
+          <option value="hr">HR Interview</option>
+          <option value="aptitude">Aptitude Test</option>
+        </select>
+      </div>
+
+      <div id="aptitudeSettings" class="full-row hidden">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div>
+            <label>Select Topic</label>
+            <select id="aptitudeTopic">
+              <option value="">Loading topics...</option>
+            </select>
+          </div>
+          <div>
+            <label>Question Count</label>
+            <input type="number" id="questionCount" min="1" max="25" value="10">
+          </div>
+        </div>
+      </div>
+
+      <div id="roleFieldContainer">
         <label>Role</label>
         <input type="text" id="role" placeholder="e.g. Data Scientist" value="Data Scientist">
       </div>
@@ -179,8 +212,9 @@
 <audio id="audioPlayer"></audio>
 
 <script>
-const INTERVIEW_URL = 'https://interview-portal-mwow.onrender.com';
-const VOICE_URL = 'http://127.0.0.1:8001';
+const INTERVIEW_URL = 'http://127.0.0.1:8000'; 
+const VOICE_URL     = 'http://127.0.0.1:8001'; 
+const VISION_URL    = 'ws://127.0.0.1:8004/vision/ws'; 
 
 let sessionId = null;
 let audioPlayer = document.getElementById('audioPlayer');
@@ -189,35 +223,58 @@ let fullScreenViolations = 0;
 let fullScreenProtection = false;
 let preGrantedStream = null;
 
-const VISION_URL = 'ws://127.0.0.1:8002/vision/ws';
 let visionWs = null;
 let proctorCanvas = document.createElement('canvas');
 let proctorCtx = proctorCanvas.getContext('2d');
 let proctorInterval = null;
 
-// ── NEW APPROACH 2: INTEGRATED VOICE WEBSOCKET ──
 let voiceWs = null;
 let mediaRecorder = null;
 let isRecordingAudio = false;
 
+let aptitudeQuestionsList = [];
+let currentAptitudeIndex = 0;
+
+async function handleInterviewTypeChange() {
+  const type = document.getElementById('interviewType').value;
+  const aptSettings = document.getElementById('aptitudeSettings');
+  const roleContainer = document.getElementById('roleFieldContainer');
+
+  if (type === 'aptitude') {
+    aptSettings.classList.remove('hidden');
+    roleContainer.classList.add('hidden');
+    
+    try {
+      const res = await fetch(`${INTERVIEW_URL}/aptitude/topic`, { method: 'POST' });
+      const data = await res.json();
+      if (data.topics) {
+        const topicSelect = document.getElementById('aptitudeTopic');
+        topicSelect.innerHTML = data.topics.map(t => `<option value="${t}">${t.replace(/_/g, ' ')}</option>`).join('');
+      }
+    } catch(e) { console.error("Topics loading error:", e); }
+  } else {
+    aptSettings.classList.add('hidden');
+    roleContainer.classList.remove('hidden');
+  }
+}
+
 function initVoiceWebSocket() {
   if (!sessionId) return;
-  
-  // Connect to backend ws: /ws/audio/{session_id}
-  const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-  const voiceWsUrl = `${wsProtocol}//127.0.0.1:8001/ws/audio/${sessionId}`;
-  
+
+  const voiceWsUrl = `ws://127.0.0.1:8001/ws/audio/${sessionId}`;
+  printLog('🎙️ Attempting Local Voice WS connection to: ' + voiceWsUrl);
   voiceWs = new WebSocket(voiceWsUrl);
 
   voiceWs.onopen = () => {
     printLog('🎙️ Voice WebSocket Channel connected successfully.');
+    document.getElementById('micBtn').disabled = false;
+    document.getElementById('userInput').disabled = false;
+    document.getElementById('sendBtn').disabled = false;
   };
 
   voiceWs.onmessage = (e) => {
     const response = JSON.parse(e.data);
     printLog('📨 Received data structure from voice server:', response);
-    
-    // Check if type matches USER_TEXT structure sent by voice_service.py
     if (response.type === "USER_TEXT" && response.text) {
       const userInput = document.getElementById('userInput');
       userInput.value = userInput.value ? userInput.value + " " + response.text : response.text;
@@ -225,13 +282,8 @@ function initVoiceWebSocket() {
     document.getElementById('userInput').placeholder = "Apna jawab yahan likho...";
   };
 
-  voiceWs.onclose = () => {
-    printLog('❌ Voice WebSocket disconnected.');
-  };
-
-  voiceWs.onerror = (err) => {
-    console.error('Voice WS Error:', err);
-  };
+  voiceWs.onclose = () => { printLog('❌ Voice WebSocket disconnected.'); };
+  voiceWs.onerror = (err) => { console.error('Voice WS Error:', err); };
 }
 
 function toggleVoiceInput() {
@@ -239,47 +291,69 @@ function toggleVoiceInput() {
     alert("Voice channels not ready. Verification pending.");
     return;
   }
-
-  if (!isRecordingAudio) {
-    startVoiceStreaming();
-  } else {
-    stopVoiceStreaming();
-  }
+  if (!isRecordingAudio) startVoiceStreaming();
+  else stopVoiceStreaming();
 }
 
 function startVoiceStreaming() {
-  isRecordingAudio = true;
-  
-  // MediaRecorder fetches stream chunks seamlessly from the pregranted sensor
-  mediaRecorder = new MediaRecorder(preGrantedStream, { mimeType: 'audio/webm' });
-  
-  mediaRecorder.ondataavailable = async (e) => {
-    if (e.data.size > 0 && voiceWs && voiceWs.readyState === WebSocket.OPEN) {
-      // Send raw binary arrayBuffer chunk cleanly over WebSocket channel
-      const arrayBuffer = await e.data.arrayBuffer();
-      voiceWs.send(arrayBuffer);
+  console.log("Supported codecs diagnostics:",
+      MediaRecorder.isTypeSupported("audio/webm"),
+      MediaRecorder.isTypeSupported("audio/webm;codecs=opus"),
+      MediaRecorder.isTypeSupported("audio/mp4")
+  );
+
+  let mimeType = "";
+  if (MediaRecorder.isTypeSupported("audio/webm;codecs=opus")) mimeType = "audio/webm;codecs=opus";
+  else if (MediaRecorder.isTypeSupported("audio/webm")) mimeType = "audio/webm";
+  else if (MediaRecorder.isTypeSupported("audio/mp4")) mimeType = "audio/mp4";
+
+  try {
+    const audioOnlyStream = new MediaStream(preGrantedStream.getAudioTracks());
+
+    if (audioOnlyStream.getAudioTracks().length === 0) {
+      alert("No active audio track found for recording.");
+      return;
     }
-  };
 
-  // Capture slice every 250ms and emit dynamically to backend
-  mediaRecorder.start(250);
+    const options = mimeType ? { mimeType } : {};
+    mediaRecorder = new MediaRecorder(audioOnlyStream, options);
+    isRecordingAudio = true;
 
-  const micBtn = document.getElementById('micBtn');
-  micBtn.textContent = '🛑 Stop Mic';
-  micBtn.classList.add('listening');
-  document.getElementById('userInput').placeholder = "Listening... Boliye.";
+    mediaRecorder.ondataavailable = async (e) => {
+      if (e.data.size > 0 && voiceWs && voiceWs.readyState === WebSocket.OPEN) {
+        const arrayBuffer = await e.data.arrayBuffer();
+        voiceWs.send(arrayBuffer);
+      }
+    };
+
+    setTimeout(() => {
+      try {
+        if (isRecordingAudio && mediaRecorder && mediaRecorder.state === "inactive") {
+          mediaRecorder.start(250);
+          const micBtn = document.getElementById('micBtn');
+          micBtn.textContent = '🛑 Stop Mic';
+          micBtn.classList.add('listening');
+          document.getElementById('userInput').placeholder = "Listening... Boliye.";
+        }
+      } catch (startErr) {
+        console.error("Delayed MediaRecorder start failed:", startErr);
+        isRecordingAudio = false;
+      }
+    }, 50);
+
+  } catch (err) {
+    console.error("Failed to initialize MediaRecorder:", err);
+    isRecordingAudio = false;
+  }
 }
 
 function stopVoiceStreaming() {
   isRecordingAudio = false;
-  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
-    mediaRecorder.stop();
-  }
+  try {
+    if (mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop();
+  } catch(e) { console.log("Error stopping mediaRecorder:", e); }
 
-  // CRITICAL STEP: Emit explicit string "STOP" command to activate whisper transcription execution loop
-  if (voiceWs && voiceWs.readyState === WebSocket.OPEN) {
-    voiceWs.send("STOP");
-  }
+  if (voiceWs && voiceWs.readyState === WebSocket.OPEN) voiceWs.send("STOP");
 
   const micBtn = document.getElementById('micBtn');
   micBtn.textContent = '🎙️ Speak';
@@ -290,100 +364,61 @@ function stopVoiceStreaming() {
 async function requestHardwareAccess() {
   try {
     preGrantedStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-    
-    const startBtn = document.getElementById('startBtn');
-    startBtn.disabled = false;
-    startBtn.style.background = '#6c47ff';
-    startBtn.style.color = '#fff';
-    startBtn.textContent = '🚀 Start Interview';
-    
+    console.log("Audio Tracks Verification:", preGrantedStream.getAudioTracks());
+    document.getElementById('startBtn').disabled = false;
+    document.getElementById('startBtn').style.background = '#6c47ff';
+    document.getElementById('startBtn').style.color = '#fff';
+    document.getElementById('startBtn').textContent = '🚀 Start Interview';
     document.getElementById('permissionBox').classList.add('hidden');
     alert("Camera & Microphone successfully authorized!");
   } catch (e) {
-    alert("Hardware constraints rejected.");
+    alert("Hardware access rejected.");
     console.error(e);
   }
 }
 
 function attachProctoringStream() {
   if (!preGrantedStream) return;
-  
   document.getElementById('cameraFeed').srcObject = preGrantedStream;
   document.getElementById('cameraSection').classList.add('active');
-
   try {
     visionWs = new WebSocket(VISION_URL);
-    visionWs.onopen = () => {
-      proctorInterval = setInterval(sendFrame, 500);
-    };
-    visionWs.onmessage = (e) => {
-      const data = JSON.parse(e.data);
-      updateWarnings(data.warnings || []);
-    };
+    visionWs.onopen = () => proctorInterval = setInterval(sendFrame, 500);
+    visionWs.onmessage = (e) => updateWarnings(JSON.parse(e.data).warnings || []);
     visionWs.onclose = () => clearInterval(proctorInterval);
-    visionWs.onerror = () => {
-      document.getElementById('proctorStatus').textContent = '● Vision offline';
-      document.getElementById('proctorStatus').className = 'proctor-status warn';
-    };
-  } catch(err) {
-    console.log("WS structure error", err);
-  }
+  } catch(err) {}
 }
 
 function sendFrame() {
   if (!visionWs || visionWs.readyState !== WebSocket.OPEN) return;
   const video = document.getElementById('cameraFeed');
   if (!video.videoWidth) return;
-
-  proctorCanvas.width = 320;
-  proctorCanvas.height = 240;
+  proctorCanvas.width = 320; proctorCanvas.height = 240;
   proctorCtx.drawImage(video, 0, 0, 320, 240);
-  const base64 = proctorCanvas.toDataURL('image/jpeg', 0.7).split(',')[1];
-  visionWs.send(JSON.stringify({ frame: base64, phase: 'USER_SPEAKING' }));
+  visionWs.send(JSON.stringify({ frame: proctorCanvas.toDataURL('image/jpeg', 0.7).split(',')[1], phase: 'USER_SPEAKING' }));
 }
 
 function updateWarnings(warnings) {
   const box = document.getElementById('warningsBox');
-  const statusEl = document.getElementById('proctorStatus');
-
   if (!warnings || warnings.length === 0) {
     box.innerHTML = '<div class="warning-ok">✅ All clear — no violations detected</div>';
-    statusEl.textContent = '● Monitoring Active';
-    statusEl.className = 'proctor-status ok';
     return;
   }
-
-  box.innerHTML = warnings.map(w => {
-    const isDanger = w.includes('phone') || w.includes('multiple') || w.includes('No face');
-    return `<div class="warning-item ${isDanger ? 'danger' : ''}">⚠️ ${w}</div>`;
-  }).join('');
-
-  const hasDanger = warnings.some(w => w.includes('phone') || w.includes('multiple'));
-  statusEl.textContent = hasDanger ? '● VIOLATION DETECTED' : '● Warning';
-  statusEl.className = hasDanger ? 'proctor-status danger' : 'proctor-status warn';
+  box.innerHTML = warnings.map(w => `<div class="warning-item">⚠️ ${w}</div>`).join('');
 }
 
-function stopProctoring() {
-  if (proctorInterval) clearInterval(proctorInterval);
-  if (visionWs) visionWs.close();
-  if (voiceWs) voiceWs.close();
-  if (preGrantedStream) preGrantedStream.getTracks().forEach(t => t.stop());
-}
+function stopProctoring() { clearInterval(proctorInterval); if(visionWs) visionWs.close(); }
 
-// Full Screen Monitoring 
 document.addEventListener("fullscreenchange", () => {
     if (!sessionId || !fullScreenProtection) return;
-
     if (!document.fullscreenElement) {
         fullScreenViolations++;
+        if(isRecordingAudio) stopVoiceStreaming();
         
-        if(isRecordingAudio) {
-           stopVoiceStreaming();
-        }
-
-        if (fullScreenViolations >= 3) {
-            triggerInterviewTermination();
-            return;
+        // FIX FIXED: 3 ya 3 se zyada violations hone par sidha permanent terminate hoga
+        if (fullScreenViolations >= 3) { 
+            triggerInterviewTermination(); 
+            return; 
         }
         
         triggerSafePauseOverlay();
@@ -404,45 +439,38 @@ function triggerSafePauseOverlay() {
 }
 
 async function actionResumeInterview() {
-    try {
-        await document.documentElement.requestFullscreen();
-        
-        interviewPaused = false;
-        document.getElementById("resumeModal").classList.add("hidden");
+    try { 
+        await document.documentElement.requestFullscreen(); 
+        interviewPaused = false; 
+        document.getElementById("resumeModal").classList.add("hidden"); 
         document.getElementById("userInput").disabled = false;
         document.getElementById("sendBtn").disabled = false;
         document.getElementById("micBtn").disabled = false;
-        
         addMessage(`✅ Interview Resumed. Warnings stack: ${fullScreenViolations}/3`, "system");
-    } catch(e) {
-        alert("Fullscreen mode mandatory hai.");
-    }
+    } catch(e) {}
 }
 
-function triggerInterviewTermination() {
+function triggerInterviewTermination() { 
     stopAudio();
-    stopProctoring();
-    
+    stopProctoring(); 
     isRecordingAudio = false;
 
+    // Inputs permanent freeze aur close mapping locks
     document.getElementById("userInput").disabled = true;
     document.getElementById("sendBtn").disabled = true;
     document.getElementById("micBtn").disabled = true;
-    
+
     document.getElementById("modalTitle").textContent = "🚫 Interview Terminated";
     document.getElementById("modalDesc").innerHTML = "Aapne limit cross kardi hai (3/3 Full Screen Violations detected). Session locked.";
     document.getElementById("modalBtn").style.display = "none"; 
-    document.getElementById("resumeModal").classList.remove("hidden");
+    document.getElementById("resumeModal").classList.remove("hidden"); 
     
     addMessage("🚫 Interview Terminated. Reason: Repeated violations.", "system");
-    sessionId = null;
+    sessionId = null; 
 }
 
 document.getElementById('userInput').addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !e.shiftKey) { 
-    e.preventDefault(); 
-    sendAnswer(); 
-  }
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendAnswer(); }
 });
 
 function addMessage(text, type) {
@@ -450,119 +478,157 @@ function addMessage(text, type) {
   const msg = document.createElement('div');
   msg.className = `msg ${type}`;
   const label = type === 'ai' ? '🤖 Interviewer' : type === 'user' ? '👤 You' : '⚙️ System';
-  msg.innerHTML = `<div class="msg-label">${label}</div>${text}`;
+  msg.innerHTML = `<div class="msg-label">${label}</div><div>${text}</div>`;
   container.appendChild(msg);
   container.scrollTop = container.scrollHeight;
+}
+
+function renderAptitudeQuestion() {
+  if (currentAptitudeIndex >= aptitudeQuestionsList.length) {
+    addMessage("🎉 Aptitude Test completed successfully! Good job.", "system");
+    speakText("Aptitude test completed successfully. Good job.");
+     setTimeout(() => {
+      triggerInterviewTermination();
+
+      }, 3000); 
+    return;
+  }
+
+  const quiz = aptitudeQuestionsList[currentAptitudeIndex];
+  const uniqueId = `quiz_${currentAptitudeIndex}`;
+  
+  let optionsHtml = '';
+  for (const [key, val] of Object.entries(quiz.options)) {
+    optionsHtml += `
+      <label class="aptitude-option">
+        <input type="radio" name="${uniqueId}" value="${key}" onclick="verifyAptitudeChoice('${key}', '${quiz.correct_option}', '${uniqueId}')">
+        <b>${key}:</b> ${val}
+      </label>
+    `;
+  }
+
+  const finalQuizCard = `
+    <div class="aptitude-box" id="card_${uniqueId}">
+      <strong>Q${currentAptitudeIndex + 1}:</strong> ${quiz.question}
+      <div style="margin-top: 10px;">${optionsHtml}</div>
+      <div class="feedback-msg" id="feedback_${uniqueId}"></div>
+      <button class="next-quiz-btn hidden" id="next_${uniqueId}" onclick="loadNextAptitudeQuestion()">Next Question ➔</button>
+      <div style="clear:both;"></div>
+    </div>
+  `;
+
+  addMessage(finalQuizCard, 'ai');
+  
+  let speakTextContext = `Question number ${currentAptitudeIndex + 1}. ${quiz.question}. `;
+  for (const [key, val] of Object.entries(quiz.options)) {
+     speakTextContext += `Option ${key}, ${val}. `;
+  }
+  speakText(speakTextContext);
+}
+
+function verifyAptitudeChoice(selected, correct, uniqueId) {
+  const fb = document.getElementById(`feedback_${uniqueId}`);
+  const nextBtn = document.getElementById(`next_${uniqueId}`);
+  
+  if (selected === correct) {
+    fb.className = "feedback-msg correct";
+    fb.innerHTML = `✅ Correct! Option ${correct} is the right answer.`;
+    nextBtn.classList.remove('hidden');
+    speakText("That is correct!");
+  } else {
+    fb.className = "feedback-msg wrong";
+    fb.innerHTML = `❌ Wrong Answer! Option ${selected} is incorrect.`;
+    speakText("Wrong answer. Please try again.");
+  }
+}
+
+function loadNextAptitudeQuestion() {
+  currentAptitudeIndex++;
+  renderAptitudeQuestion();
 }
 
 async function speakText(text) {
   try {
     document.getElementById('audioStatus').textContent = '🔊 Generating audio...';
-    document.getElementById('stopBtn').classList.add('visible');
-
     const res = await fetch(`${VOICE_URL}/speak`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text })
     });
     const data = await res.json();
-
-    if (data.audio) {
-      const bytes = atob(data.audio);
+    
+    const base64Audio = data.audio || (data.response && data.response.audio);
+    
+    if (base64Audio) {
+      const bytes = atob(base64Audio);
       const arr = new Uint8Array(bytes.length);
       for (let i = 0; i < bytes.length; i++) arr[i] = bytes.charCodeAt(i);
-      const blob = new Blob([arr], { type: 'audio/mp3' });
-      audioPlayer.src = URL.createObjectURL(blob);
+      audioPlayer.src = URL.createObjectURL(new Blob([arr], { type: 'audio/mp3' }));
       audioPlayer.play();
       document.getElementById('audioStatus').textContent = '🔊 Playing...';
-      audioPlayer.onended = () => {
-        document.getElementById('audioStatus').textContent = '✅ Done';
-        document.getElementById('stopBtn').classList.remove('visible');
-      };
     }
   } catch (e) {
-    document.getElementById('audioStatus').textContent = '⚠️ Voice service offline — text only mode';
-    document.getElementById('stopBtn').classList.remove('visible');
+     document.getElementById('audioStatus').textContent = '⚠️ Audio stream error';
   }
 }
 
-function stopAudio() {
-  audioPlayer.pause();
-  audioPlayer.src = '';
-  document.getElementById('audioStatus').textContent = '⏹ Stopped';
-  document.getElementById('stopBtn').classList.remove('visible');
-}
+function stopAudio() { audioPlayer.pause(); audioPlayer.src = ''; document.getElementById('audioStatus').textContent = '🔇 Audio ready'; }
 
 async function startInterview() {
   const role = document.getElementById('role').value;
   const experience = document.getElementById('experience').value;
   const difficulty = document.getElementById('difficulty').value;
+  const roundType = document.getElementById('interviewType').value; 
 
-  if (!role.trim()) { alert('Role daalo!'); return; }
-
-  if (!document.fullscreenElement) {
-    try {
-      await document.documentElement.requestFullscreen();
-    } catch (e) {
-      alert("Please allow Full Screen to start the interview.");
-      return;
-    }
-  }
+  if (roundType !== 'aptitude' && !role.trim()) { alert('Role daalo!'); return; }
+  if (!document.fullscreenElement) { try { await document.documentElement.requestFullscreen(); } catch (e) { return; } }
 
   document.getElementById('startBtn').disabled = true;
-  document.getElementById('startBtn').textContent = '⏳ Starting...';
 
   try {
     attachProctoringStream();
+    sessionId = '37b2d109-c1f0-4da6-b8fc-' + Math.random().toString(36).substring(2, 14);
 
-    const fd = new FormData();
-    fd.append('role', role);
-    fd.append('experience', experience);
-    fd.append('difficulty', difficulty);
-    fd.append('personality', 'friendly');
-    fd.append('mode', 'voice');
-    fd.append('resume', '');
+    if (roundType === 'aptitude') {
+      const topic = document.getElementById('aptitudeTopic').value;
+      const count = document.getElementById('questionCount').value;
+      
+      const targetUrl = `${INTERVIEW_URL}/aptitude/questions/${topic}?difficulty=${difficulty}&count=${count}`;
+      const res = await fetch(targetUrl, { method: 'GET' });
+      const data = await res.json();
+      
+      aptitudeQuestionsList = Array.isArray(data) ? data : (data.questions || []);
+      currentAptitudeIndex = 0;
 
-    const res = await fetch(`${INTERVIEW_URL}/tech_round/start`, {
-      method: 'POST',
-      body: fd
-    });
-    const data = await res.json();
+      document.getElementById('setupCard').classList.add('hidden');
+      initVoiceWebSocket();
+      fullScreenProtection = true;
 
-    sessionId = data.session_id;
-    fullScreenViolations = 0;
-    
-    // Initialize Voice WebSocket right after getting session_id
-    initVoiceWebSocket();
+      addMessage(`🎯 <b>Aptitude Test Started!</b><br>Topic: ${topic.replace(/_/g, ' ')}<br>Total Questions: ${aptitudeQuestionsList.length}`, 'system');
+      renderAptitudeQuestion();
+    } 
+    else {
+      const fd = new FormData();
+      fd.append('role', role); fd.append('experience', experience); fd.append('difficulty', difficulty);
+      fd.append('personality', 'friendly'); fd.append('mode', 'voice'); fd.append('resume', '');
 
-    document.getElementById('setupCard').classList.add('hidden');
-    document.getElementById('userInput').disabled = false;
-    document.getElementById('sendBtn').disabled = false;
-    document.getElementById('micBtn').disabled = false; 
-    document.getElementById('userInput').focus();
+      const res = await fetch(`${INTERVIEW_URL}/${roundType}/start`, { method: 'POST', body: fd });
+      const data = await res.json();
 
-    const greeting = data.response?.question || data.message || JSON.stringify(data);
-    addMessage(greeting, 'ai');
-    await speakText(greeting);
+      sessionId = data.session_id;
+      initVoiceWebSocket();
+      document.getElementById('setupCard').classList.add('hidden');
+      fullScreenProtection = true;
 
-    fullScreenProtection = true;
-
-  } catch (e) {
-    console.error("Setup error:", e);
-    addMessage('❌ Interview service se connect nahi ho paya — backend verify karein!', 'system');
-    document.getElementById('startBtn').disabled = false;
-    document.getElementById('startBtn').textContent = '🚀 Start Interview';
-    if(document.fullscreenElement) document.exitFullscreen();
-  }
+      const greeting = data.first_question || data.response?.question || data.message;
+      addMessage(greeting, 'ai');
+      speakText(greeting);
+    }
+  } catch (e) { document.getElementById('startBtn').disabled = false; }
 }
 
 async function sendAnswer() {
-  if (interviewPaused) {
-      alert("Interview is paused. Return to Full Screen first.");
-      return;
-  }
-  
-  if (isRecordingAudio) stopVoiceStreaming();
+  if (interviewPaused || isRecordingAudio) stopVoiceStreaming();
   
   const input = document.getElementById('userInput');
   const answer = input.value.trim();
@@ -571,8 +637,6 @@ async function sendAnswer() {
   input.value = '';
   addMessage(answer, 'user');
   document.getElementById('sendBtn').disabled = true;
-  document.getElementById('micBtn').disabled = true;
-  document.getElementById('sendBtn').textContent = '⏳';
 
   try {
     const res = await fetch(`${INTERVIEW_URL}/tech_round/answer`, {
@@ -581,24 +645,16 @@ async function sendAnswer() {
       body: JSON.stringify({ session_id: sessionId, answer })
     });
     const data = await res.json();
-
-    const reply = data.response?.question || data.message || data.question || JSON.stringify(data);
+    const reply = data.response?.question || data.message || data.question;
     addMessage(reply, 'ai');
     await speakText(reply);
-
-  } catch (e) {
-    addMessage('❌ Response nahi aaya — server check karo!', 'system');
-  }
+  } catch (e) {}
 
   document.getElementById('sendBtn').disabled = false;
-  document.getElementById('micBtn').disabled = false;
-  document.getElementById('sendBtn').textContent = 'Send ➤';
   input.focus();
 }
 
-function printLog(msg, debugObj = '') {
-  console.log(msg, debugObj);
-}
+function printLog(msg, debugObj = '') { console.log(msg, debugObj); }
 </script>
 </body>
 </html>
